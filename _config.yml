@@ -1,0 +1,5 @@
+url: https://invisible.directory
+
+port: 8080
+exclude:
+  - LICENSE

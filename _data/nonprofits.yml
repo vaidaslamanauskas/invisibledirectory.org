@@ -1,0 +1,1239 @@
+- name: Amnesty International
+  url: amnesty.org
+  causes: International
+
+- name: Air Pollution and Health
+  url: air-pollution.health
+  causes: Environment, Health
+
+- name: Samaritans
+  url: samaritans.org
+  causes: Health
+
+- name: Rhizome
+  url: rhizome.org
+  causes: Arts & Culture
+
+- name: Emergent Works
+  url: emergentworks.org
+  causes: Human Services, Education
+
+- name: froSkate
+  url: froskate.com
+  causes:
+
+- name: IDA Radio
+  url: idaidaida.net
+  causes: Arts & Culture
+
+- name: NYC LGBT Historic Sites Project
+  url: nyclgbtsites.org
+  causes:
+
+- name: Trees for Life
+  url: treesforlife.org.uk
+  causes: Environment
+
+- name: The Serving Library
+  url: servinglibrary.org
+  causes: Arts & Culture
+
+- name: Ocean Conservancy
+  url: oceanconservancy.org
+  causes: Environment
+
+- name: Film Independent
+  url: filmindependent.org
+  causes: Arts & Culture
+
+- name: Fairtrade Foundation
+  url: fairtrade.org.uk
+  causes: International
+
+- name: Women's & Girls' Emergency Centre
+  url: wagec.org.au
+  causes:
+
+- name: Memphis River Parks
+  url: memphisriverparks.org
+  causes: Environment
+
+- name: Superar
+  url: superar.eu
+  causes: Arts & Culture
+
+- name: USELESS
+  url: useless.london
+  causes: Environment
+
+- name: Low-tech Lab
+  url: lowtechlab.org
+  causes:
+
+- name: International Alert
+  url: international-alert.org
+  causes: International
+
+- name: The David Hockney Foundation
+  url: thedavidhockneyfoundation.org
+  causes: Arts & Culture
+
+- name: Defund to Refund
+  url: defund2refund.org
+  causes:
+
+- name: Australian Centre for Contemporary Art
+  url: acca.melbourne
+  causes: Arts & Culture
+
+- name: BKABF
+  url: bkabf.info
+  causes: Arts & Culture
+
+- name: Sesame Workshop
+  url: sesameworkshop.org
+  causes: Education
+
+- name: In Defense Of
+  url: indefenseof.us
+  causes: Human Services
+
+- name: Nuru International
+  url: nuruinternational.org
+  causes: Human Services
+
+- name: Emergence Magazine
+  url: emergencemagazine.org
+  causes: Environment, Arts & Culture
+
+- name: Museums for Climate Action
+  url: museumsforclimateaction.org
+  causes: Environment, Arts & Culture
+
+- name: Museum Brot und Kunst
+  url: museumbrotundkunst.de
+  causes: Arts & Culture
+
+- name: The Audacious Project
+  url: audaciousproject.org
+  causes: Education
+
+- name: War on Want
+  url: waronwant.org
+  causes: International
+
+- name: Climates of Inequality
+  url: climatesofinequality.org
+  causes: Environment
+
+- name: LIGHT ART SPACE (LAS)
+  url: lightartspace.org
+  causes: Arts & Culture
+
+- name: Oh-Wake Magazine
+  url: ohwake.org
+  causes: Environment, Arts & Culture
+
+- name: Africa Is a Country
+  url: africasacountry.com
+  causes:
+
+- name: 100 Climate Conversations
+  url: 100climateconversations.com
+  causes: Environment
+
+- name: Atmos
+  url: atmos.earth
+  causes: Environment, Arts & Culture
+
+- name: SUPERTRASH
+  url: supertrash.nz
+  causes: Environment
+
+- name: Traffickwatch
+  url: traffickwatch.org
+  causes: International
+
+- name: Shout Your Abortion
+  url: shoutyourabortion.com
+  causes: Health
+
+- name: Eames Institute
+  url: eamesinstitute.org
+  causes: Arts & Culture
+
+- name: Surfers for Climate
+  url: surfersforclimate.org.au
+  causes: Environment
+
+- name: (F)EMPOWER
+  url: fempowermia.org
+  causes:
+
+- name: Art to Zero
+  url: arttozero.org
+  causes: Arts & Culture, Environment
+
+- name: The Sathyam Project
+  url: sathyamproject.org
+  causes: Human Services, Education
+
+- name: The Just Trust
+  url: thejusttrust.org
+  causes:
+
+- name: Staffy and Bully Breed Rescue Inc.
+  url: sabbr.com.au
+  causes: Animal Welfare
+
+- name: Occasional Papers
+  url: occasionalpapers.org
+  causes: Arts & Culture
+
+- name: Waste Not
+  url: wastenot.world
+  causes: Environment
+
+- name: Rivers Institute
+  url: riversinstitute.org
+  causes: Arts & Culture
+
+- name: Facadomy
+  url: facadomy.org
+  causes: Arts & Culture
+
+- name: Yes We Camp
+  url: yeswecamp.org
+  causes: Arts & Culture
+
+- name: transmo loves you
+  url: response.transmissiongallery.org
+  causes: Arts & Culture
+
+- name: Bronx Documentary Center
+  url: bronxdoc.org
+  causes: Arts & Culture
+
+- name: FEED THE 3OO
+  url: 3oo.store
+  causes: Animal Welfare
+
+- name: Photoworks UK
+  url: photoworks.org.uk
+  causes: Arts & Culture
+
+- name: Beyond Prison
+  url: beyondprison.us
+  causes:
+
+- name: Chicago Architecture Biennial
+  url: chicagoarchitecturebiennial.org
+  causes: Arts & Culture
+
+- name: Happimess
+  url: happimess.lt
+  causes:
+
+- name: Climate Adaptation Australia
+  url: climateadaptationaustralia.com.au
+  causes: Environment
+
+- name: BBZ BLK BK
+  url: bbzblkbk.com
+  causes: Arts & Culture
+
+- name: Index
+  url: index-space.org
+  causes: Arts & Culture
+
+- name: Musarc
+  url: musarc.org
+  causes: Arts & Culture
+
+- name: Make Life Skate Life
+  url: makelifeskatelife.org
+  causes: Education
+
+- name: Klimaliste Berlin
+  url: klimaliste-berlin.de
+  causes: Environment
+
+- name: Grimshaw Foundation
+  url: grimshaw.foundation
+  causes: Arts & Culture
+
+- name: Women in Soccer
+  url: womeninsoccer.org
+  causes:
+
+- name: See In Black
+  url: seeinblack.com
+  causes: Arts & Culture
+
+- name: Paul Smith's Foundation
+  url: paulsmithsfoundation.com
+  causes: Arts & Culture
+
+- name: Giving Gap
+  url: givinggap.org
+  causes:
+
+- name: Art21
+  url: art21.org
+  causes: Arts & Culture
+
+- name: Save whales
+  url: save-whales.com
+  causes: Animal Welfare
+
+- name: Remember Who Made Them
+  url: rememberwhomadethem.com
+  causes: Human Services
+
+- name: Printed Matter
+  url: printedmatter.org
+  causes: Arts & Culture
+
+- name: SOS
+  url: soundsofsaving.org
+  causes: Arts & Culture, Health
+
+- name: Paris Agreement
+  url: which-countries-signed-paris-agreement.com
+  causes: Environment
+
+- name: SkatePal
+  url: skatepal.co.uk
+  causes: Education
+
+- name: Data Africa
+  url: dataafrica.io
+  causes:
+
+- name: Mind
+  url: mind.org.uk
+  causes: Health
+
+- name: UNICEF New Zealand
+  url: unicef.org.nz
+  causes: International
+
+- name: Save the Children International
+  url: savethechildren.net
+  causes: International
+
+- name: Black Fridye by Citizen Wolf
+  url: blackfridye.com
+  causes: Environment
+
+- name: Coral Gardeners
+  url: coralgardeners.org
+  causes: Environment
+
+- name: World Wildlife Fund Canada
+  url: wwf.ca
+  causes: Environment, Animal Welfare
+
+- name: Fashion Revolution
+  url: fashionrevolution.org
+  causes:
+
+- name: Blue Heart of Europe
+  url: blueheart.patagonia.com
+  causes: Environment
+
+- name: Ngaren
+  url: ngaren.org
+  causes:
+
+- name: Mikva Challenge
+  url: mikvachallenge.org
+  causes: Education
+
+- name: Vital Strategies
+  url: vitalstrategies.org
+  causes: Health
+
+- name: 1% for the Planet
+  url: onepercentfortheplanet.org
+  causes: Environment
+
+- name: We Are One Ocean
+  url: weareoneocean.org
+  causes: Environment
+
+- name: Only One
+  url: only.one
+  causes: Environment
+
+- name: Intoart
+  url: intoart.org.uk
+  causes: Arts & Culture
+
+- name: Generator Z
+  url: generator-z.org
+  causes: Education
+
+- name: Grizedale Arts
+  url: grizedale.org
+  causes: Arts & Culture
+
+- name: The Index Project
+  url: theindexproject.org
+  causes:
+
+- name: Wikimedia Foundation
+  url: wikimediafoundation.org
+  causes: Education
+
+- name: Onward
+  url: thisisonward.com
+  causes: Human Services
+
+- name: Ecosia
+  url: ecosia.org
+  causes: Environment
+
+- name: OpenAI
+  url: openai.com
+  causes:
+
+- name: Khan Academy Annual Report
+  url: khanacademyannualreport.org
+  causes: Education
+
+- name: UNHCR
+  url: unhcr.org/monpaysestuncamp
+  causes: International
+
+- name: Fridays For Future
+  url: fridaysforfuture.org
+  causes: Environment
+
+- name: VICE Impact
+  url: impact.vice.com
+  causes:
+
+- name: Away x Peace Direct
+  url: peacedirect.awaytravel.com
+  causes:
+
+- name: H&M Foundation
+  url: hmfoundation.com
+  causes:
+
+- name: Babytalk
+  url: babytalkforparents.org
+  causes: Health
+
+- name: The British Red Cross
+  url: redcross.org.uk
+  causes: Health
+
+- name: Days for Girls International
+  url: daysforgirls.org
+  causes: Health, Education
+
+- name: NSPCC
+  url: nspcc.org.uk
+  causes: Human Services, Health
+
+- name: Australian Conservation Foundation
+  url: acf.org.au
+  causes: Environment
+
+- name: The Children's Society
+  url: childrenssociety.org.uk
+  causes: Human Services, Health
+
+- name: Sydney Dogs and Cats Home
+  url: sydneydogsandcatshome.org
+  causes: Animal Welfare
+
+- name: War Child
+  url: warchild.org.uk
+  causes: Human Services, Education
+
+- name: Wilderness Society
+  url: wilderness.org.au
+  causes: Environment
+
+- name: Martin Parr Foundation
+  url: martinparrfoundation.org
+  causes: Arts & Culture
+
+- name: BOMB Magazine
+  url: bombmagazine.org
+  causes: Arts & Culture
+
+- name: Médecins Sans Frontières (MSF) International
+  url: msf.org
+  causes: Health, International
+
+- name: Harold Hunter Foundation
+  url: haroldhunter.org
+  causes: Human Services
+
+- name: Greenpeace International
+  url: greenpeace.org/international
+  causes: Environment
+
+- name: Yennenga Progress
+  url: yennengaprogress.se
+  causes: Human Services, Health, Education
+
+- name: The Skatepark Project
+  url: skatepark.org
+  causes: Human Services
+
+- name: Velvetyne
+  url: velvetyne.fr
+  causes: Arts & Culture
+
+- name: "charity: water"
+  url: charitywater.org
+  causes: Human Services
+
+- name: Wikimedia Foundation 2016-2017 Annual Report
+  url: annual.wikimedia.org/2017
+  causes:
+
+- name: Artifax Take Action!
+  url: artifax.us
+  causes:
+
+- name: GlobalXplorer
+  url: globalxplorer.org
+  causes:
+
+- name: A Blade of Grass
+  url: abladeofgrass.org
+  causes: Arts & Culture
+
+- name: One Acre Fund
+  url: oneacrefund.org
+  causes: Human Services
+
+- name: SCCR
+  url: scottishconflictresolution.org.uk
+  causes: Health
+
+- name: Girls Garage ®
+  url: girlsgarage.org
+  causes: Education
+
+- name: Internet.org
+  url: internet.org
+  causes:
+
+- name: DonorsChoose
+  url: donorschoose.org
+  causes:
+
+- name: TED
+  url: ted.com
+  causes: Education
+
+- name: The Marshall Project
+  url: themarshallproject.org
+  causes: 
+
+- name: SNV World
+  url: snv.org
+  causes: Human Services
+
+- name: Van Gogh Museum
+  url: vangoghmuseum.nl
+  causes: Arts & Culture
+
+- name: ONE
+  url: one.org
+  causes: International
+
+- name: Time To Change
+  url: time-to-change.org.uk
+  causes: Health
+
+- name: Chatham House
+  url: chathamhouse.org
+  causes: International
+
+- name: Public Art Fund
+  url: publicartfund.org
+  causes: Arts & Culture
+
+- name: Australian Marine Conservation Society
+  url: marineconservation.org.au
+  causes: Environment
+
+- name: Save the Children UK
+  url: savethechildren.org.uk
+  causes: International
+
+- name: Environmental Law
+  url: earthjustice.org
+  causes: Environment
+
+- name: UNICEF
+  url: unicef.org
+  causes: International
+
+- name: Monterey Bay Aquarium
+  url: montereybayaquarium.org
+  causes: Animal Welfare, Education
+
+- name: Everytown
+  url: everytown.org
+  causes:
+
+- name: The Ivory Game
+  url: theivorygame.com
+  causes: Animal Welfare
+
+- name: Mary's Meals
+  url: marysmeals.org
+  causes: Human Services
+
+- name: Heart and Stroke Foundation of Canada
+  url: heartandstroke.ca
+  causes: Health
+
+- name: Children's Museum of the Arts New York
+  url: cmany.org
+  causes: Arts & Culture, Education
+
+- name: Water4
+  url: water4.org
+  causes: Human Services
+
+- name: Barnes Foundation
+  url: barnesfoundation.org
+  causes: Arts & Culture
+
+- name: The World Wildlife Fund
+  url: wwf.org.uk
+  causes: Environment, Animal Welfare
+
+- name: IFAW
+  url: ifaw.org
+  causes: Animal Welfare
+
+- name: Médecins Sans Frontières
+  url: msf.org.uk
+  causes: International, Health
+
+- name: Unicef UK
+  url: unicef.org.uk
+  causes: International
+
+- name: World Monuments Fund
+  url: wmf.org
+  causes:
+
+- name: UNDP
+  url: undp.org
+  causes: International
+
+- name: Campaign for Australian Aid
+  url: australianaid.org
+  causes: International
+
+- name: WaterAid Global
+  url: wateraid.org
+  causes: Human Services, Health
+
+- name: Library of America
+  url: loa.org
+  causes: Arts & Culture
+
+- name: Wikimedia Foundation 2016 Annual Report
+  url: annual.wikimedia.org/2016
+  causes:
+
+- name: Museum of the American Revolution
+  url: amrevmuseum.org
+  causes: Arts & Culture, Education
+
+- name: The Leonardo DiCaprio Foundation
+  url: leonardodicaprio.org
+  causes: Environment, Animal Welfare
+
+- name: PUSSYPEDIA
+  url: pussypedia.net
+  causes: Health, Education
+
+- name: America Off Balance
+  url: americaoffbalance.org
+  causes:
+
+- name: The Ocean Agency
+  url: theoceanagency.org
+  causes: Environment, Arts & Culture
+
+- name: UNICEF Australia
+  url: unicef.org.au
+  causes: International
+
+- name: Young Chicago Authors
+  url: youngchicagoauthors.org
+  causes: Arts & Culture, Education
+
+- name: Conservation International
+  url: conservation.org
+  causes: Environment
+
+- name: The Skateroom
+  url: theskateroom.com
+  causes: Arts & Culture
+
+- name: Friends of the Rail Park
+  url: therailpark.org
+  causes: Environment
+
+- name: Defending Human Rights
+  url: amnesty.org.au
+  causes: International
+
+- name: Sunshine Stories
+  url: solvatten.org
+  causes: Human Services
+
+- name: Obama Foundation
+  url: obama.org
+  causes: Human Services, Education
+
+- name: One Drop
+  url: onedrop.org
+  causes: Human Services, Health
+
+- name: Vera Institute of Justice
+  url: vera.org
+  causes:
+
+- name: ProPublica
+  url: propublica.org
+  causes:
+
+- name: Artadia
+  url: artadia.org
+  causes: Arts & Culture
+
+- name: Cita Press
+  url: citapress.org
+  causes: Arts & Culture
+
+- name: Lazy Green
+  url: lazygreen.org
+  causes: Environment
+
+- name: Our Stories
+  url: ourstories.alz.org
+  causes: Health
+
+- name: The Equal Justice Initiative
+  url: eji.org
+  causes:
+
+- name: National Audubon Society
+  url: audubon.org
+  causes: Animal Welfare
+
+- name: Shelter England
+  url: england.shelter.org.uk
+  causes: Human Services
+
+- name: Malala Fund
+  url: malala.org
+  causes: Education
+
+- name: Rob Machado Foundation
+  url: robmachadofoundation.org
+  causes: Environment
+
+- name: Pamoja
+  url: pamoja.co.nz
+  causes: Health
+
+- name: UNHCR
+  url: unhcr.org
+  causes: International
+
+- name: Amnesty Sverige
+  url: amnesty.se
+  causes: International
+
+- name: Callen-Lorde
+  url: callen-lorde.org
+  causes: Health
+
+- name: Action Against Hunger
+  url: actionagainsthunger.org.uk
+  causes: Human Services
+
+- name: SolarAid
+  url: solar-aid.org
+  causes: Human Services
+
+- name: Khan Academy
+  url: khanacademy.org
+  causes: Education
+
+- name: Planned Parenthood
+  url: plannedparenthood.org
+  causes: Health
+
+- name: UNESCO UK
+  url: unesco.org.uk
+  causes:
+
+- name: 3thehardenway
+  url: 3thehardenway.com
+  causes: Education
+
+- name: International Rescue Committee (IRC)
+  url: rescue.org
+  causes: International
+
+- name: Water.org
+  url: water.org
+  causes: Human Services
+
+- name: Kiva
+  url: kiva.org
+  causes:
+
+- name: The Gorilla Organization
+  url: gorillas.org
+  causes: Animal Welfare, Environment
+
+- name: Greenpeace USA
+  url: greenpeace.org/usa
+  causes: Environment
+
+- name: Girls Who Code
+  url: girlswhocode.com
+  causes: Education
+
+- name: Campaign for Black Male Achievement
+  url: blackmaleachievement.org
+  causes: Education
+
+- name: Habitat For Humanity
+  url: habitat.org
+  causes: Human Services, International
+
+- name: Science on Screen
+  url: scienceonscreen.org
+  causes: Arts & Culture, Education
+
+- name: 100Kin10 Path to 100K
+  url: pathto100k.org
+  causes: Education
+
+- name: Plan International Norge
+  url: plan-norge.no
+  causes: International
+
+- name: Under the Skin of Endangered Animals
+  url: undertheskin.co.uk
+  causes: Arts & Culture, Animal Welfare
+
+- name: Plant Chicago
+  url: plantchicago.org
+  causes: Environment
+
+- name: The Bronx Freedom Fund
+  url: thebronxfreedomfund.org
+  causes: Human Services
+
+- name: ARTICLE 19
+  url: article19.org
+  causes: Education
+
+- name: IUCN Red List of Threatened Species
+  url: iucnredlist.org
+  causes: Environment, Animal Welfare
+
+- name: Wikipedia 15
+  url: annual.wikimedia.org/2015
+  causes:
+
+- name: Powerhouse Arts
+  url: powerhousearts.org
+  causes: Arts & Culture
+
+- name: The School Fund
+  url: theschoolfund.org
+  causes: Education
+
+- name: American Civil Liberties Union
+  url: aclu.org
+  causes:
+
+- name: National Park Foundation
+  url: nationalparks.org
+  causes: Environment
+
+- name: Adbusters Media Foundation
+  url: adbusters.org
+  causes: Arts & Culture
+
+- name: Girl Effect
+  url: girleffect.org
+  causes: Education
+
+- name: Skateistan
+  url: skateistan.org
+  causes: Education
+
+- name: Extinction Rebellion
+  url: rebellion.global
+  causes: Environment
+
+- name: National Geographic Society
+  url: nationalgeographic.org
+  causes: Environment, Education
+
+- name: PARTICIPANT INC
+  url: participantinc.org
+  causes: Arts & Culture
+
+- name: Eyebeam
+  url: eyebeam.org
+  causes: Arts & Culture
+
+- name: Bread and Water for Africa UK
+  url: forafrica.org.uk
+  causes: Human Services
+
+- name: HeadStart
+  url: headstartnewham.co.uk
+  causes: Education
+
+- name: Sewage Free Seas
+  url: sewagefreeseas.org
+  causes: Environment
+
+- name: Our Planet
+  url: ourplanet.com
+  causes: Environment
+
+- name: THE FEDERATION
+  url: wearethefederation.org
+  causes: Arts & Culture
+
+- name: Stonewall Forever
+  url: stonewallforever.org
+  causes:
+
+- name: Open Society Foundations
+  url: opensocietyfoundations.org
+  causes:
+
+- name: Moms Demand Action
+  url: momsdemandaction.org
+  causes:
+
+- name: Movement Research
+  url: movementresearch.org
+  causes: Arts & Culture
+
+- name: Oxfam Policy & Practice
+  url: policy-practice.oxfam.org
+  causes:
+
+- name: KCET
+  url: kcet.org
+  causes: Arts & Culture
+
+- name: Seeds of Peace
+  url: seedsofpeace.org
+  causes:
+
+- name: United To Beat Malaria
+  url: beatmalaria.org
+  causes: Health
+
+- name: MoveOn
+  url: front.moveon.org
+  causes:
+
+- name: The Broad
+  url: thebroad.org
+  causes: Arts & Culture
+
+- name: Cooper Hewitt, Smithsonian Design Museum
+  url: cooperhewitt.org
+  causes: Arts & Culture
+
+- name: NRDC
+  url: nrdc.org
+  causes: Environment
+
+- name: MoMA
+  url: moma.org
+  causes: Arts & Culture
+
+- name: David Suzuki Foundation
+  url: davidsuzuki.org
+  causes: Environment
+
+- name: Simons Foundation
+  url: simonsfoundation.org
+  causes:
+
+- name: Press Freedom Defense Fund
+  url: pressfreedomdefensefund.org
+  causes:
+
+- name: Surfrider Foundation
+  url: surfrider.org
+  causes: Environment
+
+- name: Free Press
+  url: freepress.net
+  causes:
+
+- name: Health Poverty Action
+  url: healthpovertyaction.org
+  causes: Health, Human Services
+
+- name: Yuwa
+  url: yuwa-india.org
+  causes: Education
+
+- name: African Parks
+  url: africanparks.org
+  causes: Environment
+
+- name: Adanu
+  url: adanu.org
+  causes: Human Services
+
+- name: COOPI
+  url: coopi.org
+  causes: International
+
+- name: International Rhino Foundation
+  url: rhinos.org
+  causes: Animal Welfare
+
+- name: Fight for the Future
+  url: fightforthefuture.org
+  causes:
+
+- name: Drive Change
+  url: drivechangenyc.org
+  causes: Human Services
+
+- name: Garden Museum
+  url: gardenmuseum.org.uk
+  causes: Arts & Culture
+
+- name: Design Trust for Public Space
+  url: designtrust.org
+  causes: Arts & Culture
+
+- name: Médecins du Monde
+  url: medecinsdumonde.org
+  causes: Health
+
+- name: (RED)
+  url: red.org
+  causes: Health
+
+- name: Ford Foundation
+  url: fordfoundation.org
+  causes: Human Services, Education
+
+- name: The Nature Conservancy
+  url: nature.org
+  causes: Environment
+
+- name: Danish Refugee Council
+  url: drc.ngo
+  causes: International
+
+- name: Sharjah Art Foundation
+  url: sharjahart.org
+  causes: Arts & Culture
+
+- name: World's Largest Youth Water Organization
+  url: thirstproject.org
+  causes: Human Services
+
+- name: Human Rights Watch
+  url: hrw.org
+  causes: International
+
+- name: Robin Hood
+  url: robinhood.org
+  causes: Human Services
+
+- name: Thistle Foundation
+  url: thistle.org.uk
+  causes: Health
+
+- name: Keep A Breast Foundation
+  url: keep-a-breast.org
+  causes: Health
+
+- name: Ubuntu Pathways
+  url: ubuntupathways.org
+  causes: Human Services, Education
+
+- name: Rainforest Alliance
+  url: rainforest-alliance.org
+  causes: Environment
+
+- name: Refugee Action
+  url: refugee-action.org.uk
+  causes: Human Services
+
+- name: Covenant House
+  url: covenanthouse.org
+  causes: Human Services
+
+- name: the Jane Goodall Institute
+  url: janegoodall.org
+  causes: Environment, Animal Welfare
+
+- name: The Ocean Cleanup
+  url: theoceancleanup.com
+  causes: Environment
+
+- name: WWF Australia
+  url: wwf.org.au
+  causes: Environment, Animal Welfare
+
+- name: streetfootballworld
+  url: streetfootballworld.org
+  causes:
+
+- name: Amplifier
+  url: amplifier.org
+  causes: Arts & Culture
+
+- name: Open Arms
+  url: openarms.es
+  causes: International
+
+- name: Virunga National Park
+  url: virunga.org
+  causes: Environment, Animal Welfare
+
+- name: New Story
+  url: newstorycharity.org
+  causes: Human Services
+
+- name: American Documentary
+  url: amdoc.org
+  causes: Arts & Culture
+
+- name: Voto Latino
+  url: votolatino.org
+  causes:
+
+- name: For Freedoms
+  url: forfreedoms.org
+  causes: Arts & Culture
+
+- name: National Forest
+  url: nationalforest.org
+  causes: Environment
+
+- name: Surfers Against Sewage
+  url: sas.org.uk
+  causes: Environment
+
+- name: Tusk
+  url: tusk.org
+  causes: Animal Welfare
+
+- name: Amnesty International UK
+  url: amnesty.org.uk
+  causes: International
+
+- name: Airbnb.org
+  url: airbnb.org
+  causes: Human Services
+
+- name: Watsi
+  url: watsi.org
+  causes: Health
+
+- name: Bill & Melinda Gates Foundation
+  url: gatesfoundation.org
+  causes: Human Services, Education, Health
+
+- name: agency of artists in exile
+  url: aa-e.org
+  causes: Arts & Culture
+
+- name: Clara Lionel Foundation
+  url: claralionelfoundation.org
+  causes: Education
+
+- name: Corita.org
+  url: corita.org
+  causes: Arts & Culture
+
+- name: 350.org
+  url: 350.org
+  causes: Environment
+
+- name: Dian Fossey Gorilla Fund
+  url: gorillafund.org
+  causes: Animal Welfare, Environment
+
+- name: Colnaghi Foundation
+  url: colnaghifoundation.org
+  causes: Arts & Culture
+
+- name: Laudes Foundation
+  url: laudesfoundation.org
+  causes: Human Services
+
+- name: The Lesbian, Gay, Bisexual & Transgender Community Center
+  url: gaycenter.org
+  causes: Human Services
+
+- name: Creative Foundation
+  url: creativefoundation.co.uk
+  causes: Arts & Culture
+
+- name: Sea Shepherd Global
+  url: seashepherdglobal.org
+  causes: Environment
+
+- name: Butterfly Project
+  url: butterflyhomenepal.org
+  causes: Education
+
+- name: Liberty in North Korea
+  url: libertyinnorthkorea.org
+  causes: Human Services, International
+
+- name: Kode With Klossy
+  url: kodewithklossy.com
+  causes: Education
+
+- name: Waves For Water
+  url: wavesforwater.org
+  causes: Human Services
+
+- name: Zone Books
+  url: zonebooks.org
+  causes: Arts & Culture
+
+- name: Wildlife SOS
+  url: wildlifesos.org
+  causes: Animal Welfare
+
+- name: The Global Goals
+  url: globalgoals.org
+  causes: International
+
+- name: World Wildlife Fund
+  url: worldwildlife.org
+  causes: Environment

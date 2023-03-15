@@ -1,0 +1,542 @@
+@font-face {
+  font-family: "Avenir Next";
+  font-display: block;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/AvenirNext-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-display: block;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/AvenirNext-Bold.woff2") format("woff2");
+}
+
+:root {
+  /* Document dimentions */
+  --document-margin: clamp(1rem, -0.25rem + 5vw, 3.75rem);
+  
+  /* Typography */
+  --type-font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+  --type-font-size: 16px;
+  --type-line-height: 1.5;
+  
+  /* Borders */
+  --border-radius-xs: .5rem; /* 8px */
+  --border-radius-sm: .625rem; /* 10px */
+  --border-radius-md: .75rem;
+  --border-radius-lg: 1rem;
+  --border-radius-full: 10rem;
+}
+
+:root {
+  box-sizing: border-box;
+  background-color: #000;
+  
+  /* Simply feels better then global text cursor */
+  cursor: default;
+  
+  font-family: var(--type-font-family);
+  font-size: var(--type-font-size);
+  line-height: var(--type-line-height);
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html.has-drapes body {
+  overflow: hidden;
+}
+
+html body::after {
+  background-color: rgb(0 0 0 / 40%);
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+  
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .25s cubic-bezier(.55, .08, 0, 1);
+  z-index: 66;
+}
+
+html.has-drapes body::after {
+  pointer-events: all;
+  opacity: 1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/**
+ * Media elements
+ */
+
+svg,
+img,
+video,
+iframe {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Reset a few styles
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote,
+dialog,
+menu,
+iframe,
+figure {
+  font: inherit;
+  margin: 0;
+  border: 0;
+  list-style: none;
+  padding: 0;
+}
+
+/**
+ * Clean out browser button styles
+ */
+
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+/**
+ * Header
+ */
+
+header {
+  background-color: transparent;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  position: sticky;
+  top: 0;
+  
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  
+  z-index: 6;
+}
+
+header > button {
+  display: flex;
+  align-items: center;
+  gap: .375rem;
+  
+  position: relative;
+  z-index: 9;
+}
+
+header > button svg {
+  fill: currentColor;
+  flex-shrink: 0;
+  
+  width: .875rem;
+  height: auto;
+  
+  transform-origin: center;
+  transition: transform .25s cubic-bezier(.55, .08, 0, 1), -webkit-transform .25s cubic-bezier(.55, .08, 0, 1);
+}
+
+header > button.is-active svg {
+  transform: rotate(180deg);
+}
+
+header > button span {
+  display: none;
+}
+
+header > menu {
+  display: flex;
+  align-items: center;
+  
+  position: relative;
+  z-index: 9;
+}
+
+header > menu a {
+  display: flex;
+  align-items: center;
+}
+
+header > button,
+header > menu button {
+  background-color: #FFF;
+  border-radius: var(--border-radius-full);
+  
+  padding: .5rem 1.125rem;
+  
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+
+header.has-tongue > button,
+header.has-tongue > menu button {
+  background-color: #000;
+  color: #FFF;
+}
+
+/**
+ * Dialog
+ */
+
+dialog {
+  background-color: #FFF;
+  display: block;
+  
+  /* Taking header into account .. */
+  padding-top: calc(1.5rem + 1.5rem + 2.5rem); /* 5.5 */
+  padding-bottom: 1rem;
+  
+  position: fixed;
+  top: 0;
+  right: 0;
+  
+  width: auto;
+  height: auto;
+  
+  overflow: hidden;
+  
+  will-change: transform;
+  transform: translate3d(0, -100%, 0);
+  transition: transform .25s cubic-bezier(.55, .08, 0, 1), -webkit-transform .25s cubic-bezier(.55, .08, 0, 1);
+}
+
+header.has-tongue dialog {
+  transform: none;
+}
+
+dialog > menu {
+  display: grid;
+  justify-items: start;
+  
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  
+  visibility: hidden;
+  -webkit-transition: visibility 0s linear .5s;
+  transition: visibility 0s linear .5s;
+}
+
+header.has-tongue dialog > menu {
+  visibility: visible;
+  -webkit-transition: none;
+  transition: none;
+}
+
+dialog > menu a {
+  display: flex;
+  align-items: center;
+  gap: .375rem;
+  
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  
+  -webkit-transform: translateY(12rem);
+  transform: translateY(12rem);
+  opacity: 0;
+  transition: opacity .25s cubic-bezier(.55, .08, 0, 1), transform 0s linear .25s, -webkit-transform 0s linear .25s;
+}
+
+header.has-tongue dialog > menu a {
+  transition: opacity .8s cubic-bezier(.55, .08, 0, 1), transform .5s cubic-bezier(.55, .08, 0, 1), -webkit-transform .5s cubic-bezier(.55, .08, 0, 1);
+  transform: none;
+  opacity: 1;
+}
+
+dialog > menu a:first-child {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+dialog > menu a:nth-child(2) {
+  -webkit-transition-delay: 25ms;
+  transition-delay: 25ms;
+}
+
+dialog > menu a:nth-child(3) {
+  -webkit-transition-delay: .05s;
+  transition-delay: .05s;
+}
+
+dialog > menu a:nth-child(4) {
+  -webkit-transition-delay: 75ms;
+  transition-delay: 75ms;
+}
+
+dialog > menu a:nth-child(5) {
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+}
+
+dialog > menu a:nth-child(6) {
+  -webkit-transition-delay: .125s;
+  transition-delay: .125s;
+}
+
+dialog > menu a:nth-child(7) {
+  -webkit-transition-delay: .15s;
+  transition-delay: .15s;
+}
+
+dialog > menu a.is-selected {
+  color: #000;
+}
+
+dialog > menu a.is-selected::after {
+  content: "Clear";
+  color: #B66E5F;
+}
+
+/**
+ * Eyes
+ */
+
+.eyes {  
+  display: flex;
+  align-items: center;
+  gap: .875rem;
+  z-index: 6;
+}
+
+.eyes .eye {
+  background-color: #FFF;
+  border-radius: var(--border-radius-full);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.eyes .eye .pupil {
+  background-color: #000;
+  border-radius: var(--border-radius-full);
+  
+  width: 1.5rem;
+  height: 1.5rem;
+  will-change: transform;
+}
+
+header.has-tongue .eye {
+  background-color: #000;
+}
+
+header.has-tongue .eye .pupil {
+  background-color: #FFF;
+}
+
+/**
+ * Main
+ */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+main > a {
+  display: block;
+  
+  position: relative;
+  grid-column: span 4;
+}
+
+main > a:focus img {
+  /* TODO: add color specific focuses .. */
+  box-shadow: 0 0 0 .25rem rgb(255 255 255 / 25%);
+}
+
+main > a img {
+  aspect-ratio: 16/10;
+  border-radius: var(--border-radius-xs);
+}
+
+main > a p {
+  color: #FFF;
+  display: block;
+  
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/**
+ * Aside
+ */
+ 
+aside {
+  background-color: #FFF;
+  display: block;
+  
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+  overflow: auto;
+  overflow-x: hidden;
+  
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: 0;
+  
+  height: 100%;
+  max-width: 140rem; /* TODO .. */
+  width: 80%;
+  
+  transform: translate3d(100%, 0, 0);
+  transition: transform .25s cubic-bezier(.55, .08, 0, 1), -webkit-transform .25s cubic-bezier(.55, .08, 0, 1);
+  
+  z-index: 666;
+}
+
+aside.is-open {
+  transform: none;
+}
+
+aside > button {
+  background-color: transparent;
+  border: 4px solid #000;
+  border-radius: var(--border-radius-full);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: sticky;
+  top: 0;
+  left: 0;
+  
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+aside > button svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+/**
+ * Article
+ */
+
+article {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
+  
+  -webkit-transform: translateY(12rem);
+  transform: translateY(12rem);
+  opacity: 0;
+  transition: opacity .25s cubic-bezier(.55, .08, 0, 1), transform 0s linear .25s, -webkit-transform 0s linear .25s;
+}
+
+aside.is-open article {
+  transition: opacity .8s cubic-bezier(.55, .08, 0, 1), transform .5s cubic-bezier(.55, .08, 0, 1), -webkit-transform .5s cubic-bezier(.55, .08, 0, 1);
+  transform: none;
+  opacity: 1;
+}
+
+article > section + section {
+  margin-top: 2.5rem;
+}
+
+article > section p + p {
+  margin-top: 1rem;
+}
+
+article > section p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  
+  max-width: 36rem;
+  width: 100%;
+}
+
+article > section a {
+  text-decoration: underline;
+}
+
+article figure img {
+  border-radius: var(--border-radius-xs);
+}
+
+article figure figcaption {
+  color: #666;
+  margin-top: 1.25rem;
+  font-size: .875rem;
+  font-weight: 500;
+}
