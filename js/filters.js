@@ -35,7 +35,7 @@ for (filter of filters) {
       
       filteringBy.style.display = 'none';
       filteringBy.innerText = '';
-      document.title = 'The Directory of Non-Profit Websites';
+      document.title = 'Invisible Directory of Non-Profit Websites';
     } else {
       for (filter of filters) {
         filter.classList.remove('is-selected');
@@ -48,7 +48,7 @@ for (filter of filters) {
       filteringBy.style.display = 'block';
       filteringBy.innerText = `“${e.target.childNodes[0].textContent.trim()}”`; // Dirty, but fixes the fact that filter contain SVGs inside
       
-      document.title = `${e.target.childNodes[0].textContent.trim()}` + ' • ' + 'The Directory of Non-Profit Websites';
+      document.title = `${e.target.childNodes[0].textContent.trim()}` + ' • ' + 'Directory of Non-Profit Websites';
 
       insertUrlParam(e.target.dataset.type, e.target.dataset.filter);
     }

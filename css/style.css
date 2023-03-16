@@ -1,25 +1,28 @@
 @font-face {
-  font-family: "Avenir Next";
+  font-family: "ShantellSans";
   font-display: block;
   font-style: normal;
   font-weight: 500;
-  src: url("/fonts/AvenirNext-Medium.woff2") format("woff2");
+  src: url("/fonts/Shantell_Sans-Normal-Medium.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Avenir Next";
+  font-family: "ShantellSans";
   font-display: block;
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/AvenirNext-Bold.woff2") format("woff2");
+  src: url("/fonts/Shantell_Sans-Normal-Bold.woff2") format("woff2");
 }
 
 :root {
   /* Document dimentions */
   --document-margin: clamp(1rem, -0.25rem + 5vw, 3.75rem);
   
+  /* Colors */
+  --off-white: hsl(0, 0%, 80%);
+  
   /* Typography */
-  --type-font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+  --type-font-family: "ShantellSans";
   --type-font-size: 16px;
   --type-line-height: 1.5;
   
@@ -70,7 +73,6 @@ html body::after {
   
   pointer-events: none;
   opacity: 0;
-  transition: opacity .25s cubic-bezier(.55, .08, 0, 1);
   z-index: 66;
 }
 
@@ -180,19 +182,12 @@ header > button {
   z-index: 9;
 }
 
-header > button svg {
-  fill: currentColor;
-  flex-shrink: 0;
-  
-  width: .875rem;
-  height: auto;
-  
-  transform-origin: center;
-  transition: transform .25s cubic-bezier(.55, .08, 0, 1), -webkit-transform .25s cubic-bezier(.55, .08, 0, 1);
+header > button::after {
+  content: "▾";
 }
 
-header > button.is-active svg {
-  transform: rotate(180deg);
+header.has-tongue > button::after {
+  content: "▴";
 }
 
 header > button span {
@@ -217,11 +212,10 @@ header > menu button {
   background-color: #FFF;
   border-radius: var(--border-radius-full);
   
-  padding: .5rem 1.125rem;
+  padding: .375rem 1rem;
   
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: -.01em;
 }
 
 header.has-tongue > button,
@@ -236,11 +230,11 @@ header.has-tongue > menu button {
 
 dialog {
   background-color: #FFF;
-  display: block;
+  display: none;
   
   /* Taking header into account .. */
-  padding-top: calc(1.5rem + 1.5rem + 2.5rem); /* 5.5 */
-  padding-bottom: 1rem;
+  padding-top: calc(1.5rem + 1.5rem + 2.625rem);
+  padding-bottom: 1.5rem;
   
   position: fixed;
   top: 0;
@@ -250,32 +244,18 @@ dialog {
   height: auto;
   
   overflow: hidden;
-  
-  will-change: transform;
-  transform: translate3d(0, -100%, 0);
-  transition: transform .25s cubic-bezier(.55, .08, 0, 1), -webkit-transform .25s cubic-bezier(.55, .08, 0, 1);
 }
 
 header.has-tongue dialog {
-  transform: none;
+  display: block;
 }
 
 dialog > menu {
   display: grid;
   justify-items: start;
   
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  
-  visibility: hidden;
-  -webkit-transition: visibility 0s linear .5s;
-  transition: visibility 0s linear .5s;
-}
-
-header.has-tongue dialog > menu {
-  visibility: visible;
-  -webkit-transition: none;
-  transition: none;
+  padding-left: calc(1.5rem + 1rem);
+  padding-right: calc(1.5rem + 1rem);
 }
 
 dialog > menu a {
@@ -283,63 +263,21 @@ dialog > menu a {
   align-items: center;
   gap: .375rem;
   
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: -.01em;
-  
-  -webkit-transform: translateY(12rem);
-  transform: translateY(12rem);
-  opacity: 0;
-  transition: opacity .25s cubic-bezier(.55, .08, 0, 1), transform 0s linear .25s, -webkit-transform 0s linear .25s;
 }
 
-header.has-tongue dialog > menu a {
-  transition: opacity .8s cubic-bezier(.55, .08, 0, 1), transform .5s cubic-bezier(.55, .08, 0, 1), -webkit-transform .5s cubic-bezier(.55, .08, 0, 1);
-  transform: none;
-  opacity: 1;
+dialog > menu a::before {
+  content: "◇";
 }
 
-dialog > menu a:first-child {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-
-dialog > menu a:nth-child(2) {
-  -webkit-transition-delay: 25ms;
-  transition-delay: 25ms;
-}
-
-dialog > menu a:nth-child(3) {
-  -webkit-transition-delay: .05s;
-  transition-delay: .05s;
-}
-
-dialog > menu a:nth-child(4) {
-  -webkit-transition-delay: 75ms;
-  transition-delay: 75ms;
-}
-
-dialog > menu a:nth-child(5) {
-  -webkit-transition-delay: .1s;
-  transition-delay: .1s;
-}
-
-dialog > menu a:nth-child(6) {
-  -webkit-transition-delay: .125s;
-  transition-delay: .125s;
-}
-
-dialog > menu a:nth-child(7) {
-  -webkit-transition-delay: .15s;
-  transition-delay: .15s;
-}
-
-dialog > menu a.is-selected {
+dialog > menu a.is-selected::before {
+  content: "◆";
   color: #000;
 }
 
 dialog > menu a.is-selected::after {
-  content: "Clear";
+  content: "Clear×";
   color: #B66E5F;
 }
 
@@ -347,40 +285,45 @@ dialog > menu a.is-selected::after {
  * Eyes
  */
 
-.eyes {  
+.eyes {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
   display: flex;
   align-items: center;
-  gap: .875rem;
   z-index: 6;
 }
 
 .eyes .eye {
-  background-color: #FFF;
-  border-radius: var(--border-radius-full);
-  
+  color: #FFF;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  width: 2.5rem;
-  height: 2.5rem;
+}
+
+header.has-tongue .eyes .eye {
+  color: hsl(0, 0%, 90%);
+}
+
+.eyes .eye:last-child {
+  margin-left: -.25rem;
+}
+
+.eyes .eye svg {
+  width: auto;
+  height: 2.625rem;
 }
 
 .eyes .eye .pupil {
-  background-color: #000;
-  border-radius: var(--border-radius-full);
+  color: #000;
   
+  position: absolute;
   width: 1.5rem;
-  height: 1.5rem;
+  height: auto;
   will-change: transform;
-}
-
-header.has-tongue .eye {
-  background-color: #000;
-}
-
-header.has-tongue .eye .pupil {
-  background-color: #FFF;
+  z-index: 6;
 }
 
 /**
@@ -404,7 +347,7 @@ main > a {
   display: block;
   
   position: relative;
-  grid-column: span 4;
+  grid-column: span 3;
 }
 
 main > a:focus img {
@@ -414,16 +357,18 @@ main > a:focus img {
 
 main > a img {
   aspect-ratio: 16/10;
+  background-color: hsl(230, 0%, 7.5%);
   border-radius: var(--border-radius-xs);
 }
 
 main > a p {
   color: #FFF;
   display: block;
+  margin-top: .5rem;
+  padding-right: 1rem;
   
   font-size: .75rem;
   font-weight: 700;
-  letter-spacing: -.01em;
   
   width: 100%;
   white-space: nowrap;
@@ -437,7 +382,7 @@ main > a p {
  
 aside {
   background-color: #FFF;
-  display: block;
+  display: none;
   
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -454,16 +399,13 @@ aside {
   
   height: 100%;
   max-width: 140rem; /* TODO .. */
-  width: 80%;
-  
-  transform: translate3d(100%, 0, 0);
-  transition: transform .25s cubic-bezier(.55, .08, 0, 1), -webkit-transform .25s cubic-bezier(.55, .08, 0, 1);
+  width: 85%;
   
   z-index: 666;
 }
 
 aside.is-open {
-  transform: none;
+  display: block;
 }
 
 aside > button {
@@ -484,7 +426,7 @@ aside > button {
 }
 
 aside > button svg {
-  width: 1rem;
+  width: auto;
   height: 1rem;
 }
 
@@ -497,17 +439,6 @@ article {
   padding-bottom: 2.5rem;
   padding-left: 6.25rem;
   padding-right: 6.25rem;
-  
-  -webkit-transform: translateY(12rem);
-  transform: translateY(12rem);
-  opacity: 0;
-  transition: opacity .25s cubic-bezier(.55, .08, 0, 1), transform 0s linear .25s, -webkit-transform 0s linear .25s;
-}
-
-aside.is-open article {
-  transition: opacity .8s cubic-bezier(.55, .08, 0, 1), transform .5s cubic-bezier(.55, .08, 0, 1), -webkit-transform .5s cubic-bezier(.55, .08, 0, 1);
-  transform: none;
-  opacity: 1;
 }
 
 article > section + section {
@@ -519,10 +450,10 @@ article > section p + p {
 }
 
 article > section p {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 500;
   
-  max-width: 36rem;
+  max-width: 40rem;
   width: 100%;
 }
 
