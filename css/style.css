@@ -2,6 +2,14 @@
   font-family: "ShantellSans";
   font-display: block;
   font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Shantell_Sans-Normal-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ShantellSans";
+  font-display: block;
+  font-style: normal;
   font-weight: 500;
   src: url("/fonts/Shantell_Sans-Normal-Medium.woff2") format("woff2");
 }
@@ -287,7 +295,7 @@ dialog > menu span {
   color: var(--gray);
   font-size: .875rem;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: .02em;
   text-transform: uppercase;
 }
 
@@ -464,8 +472,8 @@ article > section p + p {
 
 article > section p {
   font-size: 1.375rem;
-  font-weight: 500;
-  
+  font-weight: 400;
+  letter-spacing: .01em;
   max-width: 40rem;
   width: 100%;
 }
