@@ -19,7 +19,7 @@
   --document-margin: clamp(1rem, -0.25rem + 5vw, 3.75rem);
   
   /* Colors */
-  --off-white: hsl(0, 0%, 80%);
+  --gray: rgb(87 87 87);
   
   /* Typography */
   --type-font-family: "ShantellSans";
@@ -162,8 +162,10 @@ header {
   align-items: center;
   justify-content: space-between;
   
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -233,7 +235,7 @@ dialog {
   display: none;
   
   /* Taking header into account .. */
-  padding-top: calc(1.5rem + 1.5rem + 2.625rem);
+  padding-top: 5.625rem;
   padding-bottom: 1.5rem;
   
   position: fixed;
@@ -263,22 +265,30 @@ dialog > menu a {
   align-items: center;
   gap: .375rem;
   
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
 dialog > menu a::before {
-  content: "◇";
+  content: "○";
 }
 
 dialog > menu a.is-selected::before {
-  content: "◆";
+  content: "●";
   color: #000;
 }
 
 dialog > menu a.is-selected::after {
-  content: "Clear×";
+  content: "Clear";
   color: #B66E5F;
+}
+
+dialog > menu span {
+  color: var(--gray);
+  font-size: .875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 /**
@@ -304,7 +314,7 @@ dialog > menu a.is-selected::after {
 }
 
 header.has-tongue .eyes .eye {
-  color: hsl(0, 0%, 90%);
+  color: hsl(0 0% 90%);
 }
 
 .eyes .eye:last-child {
@@ -336,6 +346,9 @@ main {
   
   column-gap: 1.5rem;
   row-gap: 1.5rem;
+  
+  /* Header height */
+  margin-top: 5.625rem;
   
   padding-top: 0;
   padding-bottom: 1.5rem;
@@ -466,7 +479,7 @@ article figure img {
 }
 
 article figure figcaption {
-  color: #666;
+  color: var(--gray);
   margin-top: 1.25rem;
   font-size: .875rem;
   font-weight: 500;
