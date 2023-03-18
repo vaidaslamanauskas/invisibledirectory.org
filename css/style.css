@@ -338,7 +338,7 @@ header.has-tongue .eyes .eye {
   color: #000;
   
   position: absolute;
-  width: 1.5rem;
+  width: 1.375rem;
   height: auto;
   will-change: transform;
   z-index: 6;
