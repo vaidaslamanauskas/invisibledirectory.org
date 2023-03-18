@@ -482,13 +482,17 @@ article > section a {
   text-decoration: underline;
 }
 
+article figure {
+  display: none;
+}
+
 article figure img {
   border-radius: var(--border-radius-xs);
 }
 
 article figure figcaption {
   color: var(--gray);
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   font-size: .875rem;
   font-weight: 500;
 }

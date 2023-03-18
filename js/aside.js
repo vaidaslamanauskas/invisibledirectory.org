@@ -1,3 +1,9 @@
+const figures = document.querySelectorAll('aside figure');
+const randomFigure = Math.floor(Math.random() * figures.length);
+
+figures[randomFigure].style.display = 'block';
+console.log(figures[randomFigure]);
+
 const aside = document.querySelector('aside');
 const asideOpen = document.querySelector('header > menu button');
 const asideClose = document.querySelector('aside > button');
