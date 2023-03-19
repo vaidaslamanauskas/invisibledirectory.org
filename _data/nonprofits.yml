@@ -1,3 +1,7 @@
+- name: Palanga Street Radio
+  url: palanga.live
+  causes: Arts & Culture
+
 - name: Amnesty International
   url: amnesty.org
   causes: International
