@@ -42,7 +42,9 @@ for (filter of filters) {
       e.target.classList.add('is-selected');
 
       hideAllBlocks();
-      filterBlocks(e.target.dataset.type + 's', e.target.dataset.filter);
+      
+      // filterBlocks(e.target.dataset.type + 's', e.target.dataset.filter);
+      filterBlocks(e.target.dataset.type, e.target.dataset.filter);
 
       filteringBy.style.display = 'block';
       filteringBy.innerText = `“${e.target.childNodes[0].textContent.trim()}”`; // Dirty, but fixes the fact that filter contain SVGs inside

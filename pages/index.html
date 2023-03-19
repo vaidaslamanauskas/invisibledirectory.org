@@ -4,7 +4,7 @@ permalink: /
 ---
 
 {% for nonprofit in site.data.nonprofits %}
-  <a href="https://{{ nonprofit.url }}/" data-causes="{{ nonprofit.causes | downcase | replace: ', ', ',' | replace: ' ', '-' | replace: '&', 'and' }}" target="_blank">
+  <a href="https://{{ nonprofit.url }}/" data-cause="{{ nonprofit.cause | downcase | replace: ', ', ',' | replace: ' ', '-' | replace: '&', 'and' }}" target="_blank">
     <img src="/images/{{ nonprofit.url | replace: '/', '.' }}.jpg" alt="Screenshot of {{ nonprofit.name }} website." loading="lazy">
     <p>{{ nonprofit.name }}</p>
   </a>
