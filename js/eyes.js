@@ -1,5 +1,8 @@
 const pupils = document.querySelectorAll('.pupil');
 
+// thx to Elliott for unknowingly teaching me most of what I know about javascript ..
+// https://elliott.computer
+
 // Eye tracking
 window.addEventListener('mousemove', (e) => {
   pupils.forEach((pupil) => {
