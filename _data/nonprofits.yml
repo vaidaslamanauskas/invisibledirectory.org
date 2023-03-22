@@ -1,3 +1,7 @@
+- name: Coral Reef Alliance
+  url: coral.org
+  cause: Environment
+
 - name: WeGotNext
   url: we-got-next.org
   cause: Environment
