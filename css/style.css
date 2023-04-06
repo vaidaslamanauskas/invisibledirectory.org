@@ -81,7 +81,7 @@ html body::after {
   
   pointer-events: none;
   opacity: 0;
-  z-index: 66;
+  z-index: 666;
 }
 
 html.has-drapes body::after {
@@ -180,7 +180,7 @@ header {
   padding-left: 1rem;
   padding-right: 1rem;
   
-  z-index: 6;
+  z-index: 666;
 }
 
 header > button {
@@ -422,7 +422,7 @@ aside {
   max-width: 140rem; /* TODO .. */
   width: 100%;
   
-  z-index: 666;
+  z-index: 6666;
 }
 
 aside.is-open {
