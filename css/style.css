@@ -197,7 +197,7 @@ header > button::after {
 }
 
 header.has-tongue > button::after {
-  content: "▴";
+  content: "▴"; /* use × */
 }
 
 header > button span {
@@ -258,6 +258,13 @@ dialog {
 
 header.has-tongue dialog {
   display: block;
+  animation: skateDown .25s cubic-bezier(.33, 1, .68, 1) 0s 1 normal none running;
+}
+
+@keyframes skateDown {
+  0% {
+    transform: translateY(-100%);
+  }
 }
 
 dialog > menu {
