@@ -1,7 +1,6 @@
 var favicons = [
-  '/favicon.svg',
-  '/favicon-left.svg',
-  '/favicon-right.svg'
+  '/favicon.ico',
+  '/favicon_reverse.ico'
 ],
 
 // To keep track of the current image
@@ -14,7 +13,7 @@ setInterval(function() {
      document.querySelector("link[rel='icon']").remove();
 
   // Add new favicon image
-  document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="icon" type="image/svg+xml" href="' + favicons[counter] + '">');
+  document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="icon" type="image/x-icon" href="' + favicons[counter] + '">');
 
   // If last image then goto first image
   // Else go to next image    
