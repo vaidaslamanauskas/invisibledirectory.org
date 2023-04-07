@@ -183,6 +183,10 @@ header {
   z-index: 666;
 }
 
+header.has-tongue {
+  z-index: 6666; /* to overpower drapes .. */
+}
+
 header > button {
   display: flex;
   align-items: center;
@@ -209,7 +213,6 @@ header > menu {
   align-items: center;
   
   position: relative;
-  z-index: 9;
 }
 
 header > menu a {
@@ -228,8 +231,7 @@ header > menu button {
   font-weight: 700;
 }
 
-header.has-tongue > button,
-header.has-tongue > menu button {
+header.has-tongue > button {
   background-color: #000;
   color: #FFF;
 }

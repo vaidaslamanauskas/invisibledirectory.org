@@ -7,11 +7,15 @@ filtersToggle.addEventListener('click', () => {
     filtersBox.setAttribute('aria-hidden', false);
     header.classList.add('has-tongue');
     
+    document.documentElement.classList.add('has-drapes');
+    
     filtersToggle.dataset.open = 'true';
     filtersToggle.classList.add('is-active');
   } else {
     filtersBox.setAttribute('aria-hidden', true);
     header.classList.remove('has-tongue');
+    
+    document.documentElement.classList.remove('has-drapes');
     
     filtersToggle.dataset.open = 'false';
     filtersToggle.classList.remove('is-active');
@@ -54,6 +58,8 @@ for (filter of filters) {
 
     filtersBox.setAttribute('aria-hidden', true);
     header.classList.remove('has-tongue');
+    
+    document.documentElement.classList.remove('has-drapes');
     
     filtersToggle.classList.remove('is-active');
     filtersToggle.dataset.open = 'false';
