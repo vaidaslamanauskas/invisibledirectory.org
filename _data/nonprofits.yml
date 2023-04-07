@@ -10,10 +10,6 @@
   url: southernsmoke.org
   cause: Human Services, Health
 
-- name: Unga Klara
-  url: ungaklara.se
-  cause: Arts & Culture
-
 - name: Le lieu unique
   url: lelieuunique.com
   cause: Arts & Culture
@@ -229,6 +225,10 @@
 - name: Atmos
   url: atmos.earth
   cause: Environment, Arts & Culture
+
+- name: Unga Klara
+  url: ungaklara.se
+  cause: Arts & Culture
 
 - name: SUPERTRASH
   url: supertrash.nz
