@@ -1,3 +1,7 @@
+- name: SUGi
+  url: sugiproject.com
+  cause: Environment
+
 - name: STRIKE! Magazine
   url: strikemag.org
   cause: Arts & Culture
