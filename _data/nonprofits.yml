@@ -602,6 +602,10 @@
   url: abladeofgrass.org
   cause: Arts & Culture
 
+- name: Girls Garage ®
+  url: girlsgarage.org
+  cause: Education
+
 - name: One Acre Fund
   url: oneacrefund.org
   cause: Human Services
@@ -610,17 +614,9 @@
   url: scottishconflictresolution.org.uk
   cause: Health
 
-- name: Girls Garage ®
-  url: girlsgarage.org
-  cause: Education
-
 - name: DonorsChoose
   url: donorschoose.org
   cause:
-
-- name: TED
-  url: ted.com
-  cause: Education
 
 - name: The Marshall Project
   url: themarshallproject.org
