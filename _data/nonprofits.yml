@@ -1106,6 +1106,10 @@
   url: drivechangenyc.org
   cause: Human Services
 
+- name: (RED)
+  url: red.org
+  cause: Health
+
 - name: Garden Museum
   url: gardenmuseum.org.uk
   cause: Arts & Culture
@@ -1113,10 +1117,6 @@
 - name: Design Trust for Public Space
   url: designtrust.org
   cause: Arts & Culture
-
-- name: (RED)
-  url: red.org
-  cause: Health
 
 - name: Ford Foundation
   url: fordfoundation.org
