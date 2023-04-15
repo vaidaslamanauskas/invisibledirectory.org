@@ -1038,10 +1038,6 @@
   url: beatmalaria.org
   cause: Health
 
-- name: MoveOn
-  url: front.moveon.org
-  cause:
-
 - name: The Broad
   url: thebroad.org
   cause: Arts & Culture
