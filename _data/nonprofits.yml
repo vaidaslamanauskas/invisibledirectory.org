@@ -1,3 +1,11 @@
+- name: Rainforest Trust
+  url: rainforesttrust.org
+  cause: Environment, Animal Welfare
+
+- name: Acumen
+  url: acumen.org
+  cause: Human Services
+
 - name: Sky High Farm
   url: skyhighfarm.org
   cause: Human Services, Environment
