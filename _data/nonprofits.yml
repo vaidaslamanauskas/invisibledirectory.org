@@ -1,3 +1,7 @@
+- name: Tearfund
+  url: tearfund.org
+  cause: International, Human Services
+
 - name: Probable Futures
   url: probablefutures.org
   cause: Environment
