@@ -758,10 +758,6 @@
   url: unicef.org.uk
   cause: International
 
-- name: World Monuments Fund
-  url: wmf.org
-  cause:
-
 - name: UNDP
   url: undp.org
   cause: International
