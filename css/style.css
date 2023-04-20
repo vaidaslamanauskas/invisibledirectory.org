@@ -412,7 +412,7 @@ main > a p {
  
 aside {
   background-color: #FFF;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-end;
   
@@ -430,18 +430,19 @@ aside {
   right: 0;
   
   height: 100%;
-  max-width: 32rem;
+  max-width: 100%;
   width: 100%;
   
   z-index: 6666;
 }
 
 aside.is-open {
-  display: block;
+  display: flex;
 }
 
 aside > button {
-  background-color: teal;
+  background-color: #FFF;
+  border: .25rem solid #000;
   border-radius: var(--border-radius-full);
   
   display: flex;
@@ -522,6 +523,10 @@ article figure figcaption {
   main > a {
     grid-column: span 4;
   }
+  
+  aside {
+    max-width: 75%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -576,5 +581,9 @@ article figure figcaption {
   
   main > a {
     grid-column: span 3;
+  }
+  
+  aside {
+    max-width: 32rem;
   }
 }
