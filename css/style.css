@@ -412,12 +412,14 @@ main > a p {
  
 aside {
   background-color: #FFF;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   
   overflow: auto;
   overflow-x: hidden;
@@ -428,7 +430,7 @@ aside {
   right: 0;
   
   height: 100%;
-  max-width: 140rem; /* TODO .. */
+  max-width: 32rem;
   width: 100%;
   
   z-index: 6666;
@@ -439,13 +441,13 @@ aside.is-open {
 }
 
 aside > button {
-  background-color: #FFF;
-  border: 4px solid #000;
+  background-color: teal;
   border-radius: var(--border-radius-full);
   
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   
   position: sticky;
   top: 0;
@@ -465,18 +467,27 @@ aside > button svg {
  */
 
 article {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  padding-left: calc(0rem + .75rem);
-  padding-right: calc(0rem + .75rem);
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 article > section + section {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+}
+
+article > section h2 + p {
+  margin-top: .875rem;
 }
 
 article > section p + p {
   margin-top: .875rem;
+}
+
+article > section h2 {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 article > section p {
@@ -510,17 +521,6 @@ article figure figcaption {
   
   main > a {
     grid-column: span 4;
-  }
-  
-  article {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: calc(2.375rem + 1rem);
-    padding-right: calc(2.375rem + 1rem);
-  }
-  
-  article > section p {
-    font-size: 1.125rem;
   }
 }
 
@@ -576,48 +576,5 @@ article figure figcaption {
   
   main > a {
     grid-column: span 3;
-  }
-  
-  aside {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    
-    width: 85%;
-  }
-  
-  aside > button {
-    width: 2.75rem;
-    height: 2.75rem;
-  }
-  
-  aside > button svg {
-    height: 1rem;
-  }
-  
-  article {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    padding-left: 6.25rem;
-    padding-right: 6.25rem;
-  }
-  
-  article > section + section {
-    margin-top: 2.5rem;
-  }
-  
-  article > section p + p {
-    margin-top: 1rem;
-  }
-  
-  article > section p {
-    font-size: 1.375rem;
-    max-width: 40rem;
-  }
-  
-  article figure figcaption {
-    margin-top: 1rem;
-    font-size: .875rem;
   }
 }
