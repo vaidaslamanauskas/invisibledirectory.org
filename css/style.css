@@ -438,6 +438,13 @@ aside {
 
 aside.is-open {
   display: flex;
+  animation: skateLeft .25s cubic-bezier(.33, 1, .68, 1) 0s 1 normal none running;
+}
+
+@keyframes skateLeft {
+  0% {
+    transform: translateX(100%);
+  }
 }
 
 aside > button {
