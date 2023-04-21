@@ -342,7 +342,7 @@ header.has-tongue .eyes .eye {
 
 .eyes .eye svg {
   width: auto;
-  height: 2.625rem;
+  height: 3rem;
 }
 
 .eyes .eye .pupil {
@@ -350,7 +350,7 @@ header.has-tongue .eyes .eye {
   
   position: absolute;
   width: auto;
-  height: 1.375rem;
+  height: 1.625rem;
   will-change: transform;
   z-index: 6;
 }
