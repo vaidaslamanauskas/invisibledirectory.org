@@ -556,8 +556,8 @@ article figure figcaption {
   }
   
   dialog > menu {
-    padding-left: calc(1.5rem + 1rem);
-    padding-right: calc(1.5rem + 1rem);
+    padding-left: calc(2rem + 1rem);
+    padding-right: calc(2rem + 1rem);
   }
   
   dialog > menu a {
