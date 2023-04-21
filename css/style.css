@@ -543,8 +543,10 @@ article figure figcaption {
   header {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    
+    /* Offset inset shadow .. */
+    padding-left: calc(2rem - .125rem);
+    padding-right: calc(2rem - .125rem);
   }
   
   dialog {
