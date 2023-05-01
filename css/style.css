@@ -175,10 +175,10 @@ header {
   left: 0;
   right: 0;
   
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
   
   z-index: 666;
 }
@@ -247,8 +247,8 @@ dialog {
   display: none;
   
   /* Taking header into account .. */
-  padding-top: 4.25rem;
-  padding-bottom: 1rem;
+  padding-top: 4.75rem;
+  padding-bottom: 1.125rem;
   
   position: fixed;
   top: 0;
@@ -275,8 +275,8 @@ dialog > menu {
   display: grid;
   justify-items: start;
   
-  padding-left: calc(1rem + 1rem);
-  padding-right: calc(1rem + 1rem);
+  padding-left: calc(1.125rem + 1rem);
+  padding-right: calc(1.125rem + 1rem);
 }
 
 dialog > menu a {
@@ -367,12 +367,12 @@ main {
   row-gap: 1rem;
   
   /* Header height */
-  margin-top: 4.25rem;
+  margin-top: 4.75rem;
   
   padding-top: 0;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-bottom: 1.125rem;
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
 }
 
 main > a {
@@ -418,10 +418,10 @@ aside {
   flex-direction: column;
   align-items: flex-end;
   
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
   
   overflow: auto;
   overflow-x: hidden;
