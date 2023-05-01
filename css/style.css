@@ -509,6 +509,12 @@ article > section p {
   width: 100%;
 }
 
+article > section small {
+  color: var(--gray);
+  font-size: .75rem;
+  font-weight: 500;
+}
+
 article > section a {
   text-decoration: underline;
 }
