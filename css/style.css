@@ -382,9 +382,13 @@ main > a {
   grid-column: span 6;
 }
 
+main > a:focus {
+  outline: none;
+}
+
 main > a:focus img {
   /* TODO: add color specific focuses .. */
-  box-shadow: 0 0 0 .25rem rgb(255 255 255 / 25%);
+  box-shadow: 0 0 0 .25rem rgb(255 255 255 / 30%);
 }
 
 main > a img {
