@@ -1,3 +1,7 @@
+- name: Generation COVID
+  url: sites.unicef.org/generation-covid
+  cause: International
+
 - name: Ben Raemers Foundation
   url: thebenraemersfoundation.com
   cause: Health
