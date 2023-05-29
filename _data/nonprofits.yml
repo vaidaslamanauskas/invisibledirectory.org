@@ -1,3 +1,7 @@
+- name: "re:arc institute"
+  url: rearc.institute
+  cause: Environment
+  
 - name: End Qualified Immunity
   url: endqi.org
   cause:
