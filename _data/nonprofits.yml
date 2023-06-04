@@ -1,3 +1,7 @@
+- name: MAMA
+  url: thisismama.nl
+  cause: Arts & Culture
+
 - name: Survival International
   url: survivalinternational.org
   cause: International
