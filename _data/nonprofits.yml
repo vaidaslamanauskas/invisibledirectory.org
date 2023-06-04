@@ -1,10 +1,10 @@
-- name: Black Women of Print
-  url: blackwomenofprint.com
-  cause: Arts & Culture, Education
-
 - name: MAMA
   url: thisismama.nl
   cause: Arts & Culture
+
+- name: Black Women of Print
+  url: blackwomenofprint.com
+  cause: Arts & Culture, Education
 
 - name: Survival International
   url: survivalinternational.org
