@@ -1,3 +1,7 @@
+- name: Foam
+  url: foam.org
+  cause: Arts & Culture
+
 - name: China’s Mass Internment, Torture and Persecution of Muslims in Xinjiang
   url: xinjiang.amnesty.org
   cause: International
@@ -5,10 +9,6 @@
 - name: Tech Equity Collective
   url: techequitycollective.com
   cause: Human Services
-
-- name: Foam
-  url: foam.org
-  cause: Arts & Culture
 
 - name: Malala Fund 2021–22 Annual Report
   url: 2021.malala.org
