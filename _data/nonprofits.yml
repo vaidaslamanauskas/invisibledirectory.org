@@ -1042,10 +1042,6 @@
   url: pamoja.co.nz
   cause: Health
 
-- name: UNHCR
-  url: unhcr.org
-  cause: International
-
 - name: Amnesty Sverige
   url: amnesty.se
   cause: International
