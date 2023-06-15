@@ -1074,10 +1074,6 @@
   url: rescue.org
   cause: International
 
-- name: Water.org
-  url: water.org
-  cause: Human Services
-
 - name: Kiva
   url: kiva.org
   cause:
