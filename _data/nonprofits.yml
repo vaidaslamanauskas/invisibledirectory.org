@@ -1374,13 +1374,13 @@
   url: colnaghifoundation.org
   cause: Arts & Culture
 
-- name: Creative Foundation
-  url: creativefoundation.co.uk
-  cause: Arts & Culture
-
 - name: Liberty in North Korea
   url: libertyinnorthkorea.org
   cause: Human Services, International
+
+- name: Creative Foundation
+  url: creativefoundation.co.uk
+  cause: Arts & Culture
 
 - name: Waves For Water
   url: wavesforwater.org
