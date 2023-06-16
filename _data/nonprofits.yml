@@ -1342,6 +1342,10 @@
   url: amnesty.org.uk
   cause: International
 
+- name: The Global Goals
+  url: globalgoals.org
+  cause: International
+
 - name: Airbnb.org
   url: airbnb.org
   cause: Human Services
@@ -1389,10 +1393,6 @@
 - name: Zone Books
   url: zonebooks.org
   cause: Arts & Culture
-
-- name: The Global Goals
-  url: globalgoals.org
-  cause: International
 
 - name: World Wildlife Fund
   url: worldwildlife.org
