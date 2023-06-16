@@ -1342,10 +1342,6 @@
   url: amnesty.org.uk
   cause: International
 
-- name: The Global Goals
-  url: globalgoals.org
-  cause: International
-
 - name: Airbnb.org
   url: airbnb.org
   cause: Human Services
@@ -1353,10 +1349,6 @@
 - name: Watsi
   url: watsi.org
   cause: Health
-
-- name: Bill & Melinda Gates Foundation
-  url: gatesfoundation.org
-  cause: Human Services, Education, Health
 
 - name: Corita.org
   url: corita.org
@@ -1369,6 +1361,10 @@
 - name: Colnaghi Foundation
   url: colnaghifoundation.org
   cause: Arts & Culture
+
+- name: Bill & Melinda Gates Foundation
+  url: gatesfoundation.org
+  cause: Human Services, Education, Health
 
 - name: Liberty in North Korea
   url: libertyinnorthkorea.org
