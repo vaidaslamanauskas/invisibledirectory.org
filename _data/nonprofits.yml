@@ -1242,13 +1242,13 @@
   url: drivechangenyc.org
   cause: Human Services
 
-- name: (RED)
-  url: red.org
-  cause: Health
-
 - name: Garden Museum
   url: gardenmuseum.org.uk
   cause: Arts & Culture
+
+- name: (RED)
+  url: red.org
+  cause: Health
 
 - name: Human Rights Watch
   url: hrw.org
@@ -1321,10 +1321,6 @@
 - name: Airbnb.org
   url: airbnb.org
   cause: Human Services
-
-- name: Watsi
-  url: watsi.org
-  cause: Health
 
 - name: Corita.org
   url: corita.org
