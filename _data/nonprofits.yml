@@ -1182,17 +1182,13 @@
   url: momsdemandaction.org
   cause:
 
-- name: KCET
-  url: kcet.org
+- name: Cooper Hewitt, Smithsonian Design Museum
+  url: cooperhewitt.org
   cause: Arts & Culture
 
 - name: United To Beat Malaria
   url: beatmalaria.org
   cause: Health
-
-- name: Cooper Hewitt, Smithsonian Design Museum
-  url: cooperhewitt.org
-  cause: Arts & Culture
 
 - name: MoMA
   url: moma.org
