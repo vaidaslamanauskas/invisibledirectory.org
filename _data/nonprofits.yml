@@ -738,6 +738,10 @@
   url: redcross.org.uk
   cause: Health
 
+- name: BOMB Magazine
+  url: bombmagazine.org
+  cause: Arts & Culture
+
 - name: Days for Girls International
   url: daysforgirls.org
   cause: Health, Education
@@ -757,10 +761,6 @@
 - name: Sydney Dogs and Cats Home
   url: sydneydogsandcatshome.org
   cause: Animal Welfare
-
-- name: BOMB Magazine
-  url: bombmagazine.org
-  cause: Arts & Culture
 
 - name: Médecins Sans Frontières International
   url: msf.org
