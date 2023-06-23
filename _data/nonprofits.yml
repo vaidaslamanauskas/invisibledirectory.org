@@ -398,10 +398,6 @@
   url: bkabf.info
   cause: Arts & Culture
 
-- name: Sesame Workshop
-  url: sesameworkshop.org
-  cause: Education
-
 - name: In Defense Of
   url: indefenseof.us
   cause: Human Services
@@ -409,6 +405,10 @@
 - name: Nuru International
   url: nuruinternational.org
   cause: Human Services
+
+- name: Sesame Workshop
+  url: sesameworkshop.org
+  cause: Education
 
 - name: Emergence Magazine
   url: emergencemagazine.org
