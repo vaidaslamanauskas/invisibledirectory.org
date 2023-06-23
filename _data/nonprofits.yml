@@ -710,17 +710,9 @@
   url: khanacademyannualreport.org
   cause: Education
 
-- name: UNHCR
-  url: unhcr.org/monpaysestuncamp
-  cause: International
-
 - name: Fridays For Future
   url: fridaysforfuture.org
   cause: Environment
-
-- name: VICE Impact
-  url: impact.vice.com
-  cause:
 
 - name: Away x Peace Direct
   url: peacedirect.awaytravel.com
