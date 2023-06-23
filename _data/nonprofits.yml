@@ -1010,10 +1010,6 @@
   url: theschoolfund.org
   cause: Education
 
-- name: National Park Foundation
-  url: nationalparks.org
-  cause: Environment
-
 - name: Adbusters Media Foundation
   url: adbusters.org
   cause: Arts & Culture
@@ -1021,10 +1017,6 @@
 - name: Extinction Rebellion
   url: rebellion.global
   cause: Environment
-
-- name: National Geographic Society
-  url: nationalgeographic.org
-  cause: Environment, Education
 
 - name: Skateistan
   url: skateistan.org
