@@ -626,13 +626,13 @@
   url: unicef.org.nz
   cause: International
 
-- name: Save the Children International
-  url: savethechildren.net
-  cause: International
-
 - name: Coral Gardeners
   url: coralgardeners.org
   cause: Environment
+
+- name: Save the Children International
+  url: savethechildren.net
+  cause: International
 
 - name: World Wildlife Fund Canada
   url: wwf.ca
