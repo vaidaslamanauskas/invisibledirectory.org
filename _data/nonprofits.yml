@@ -1042,13 +1042,13 @@
   url: opensocietyfoundations.org
   cause:
 
-- name: Moms Demand Action
-  url: momsdemandaction.org
-  cause:
-
 - name: Cooper Hewitt, Smithsonian Design Museum
   url: cooperhewitt.org
   cause: Arts & Culture
+
+- name: Moms Demand Action
+  url: momsdemandaction.org
+  cause:
 
 - name: MoMA
   url: moma.org
