@@ -622,10 +622,6 @@
   url: dataafrica.io
   cause:
 
-- name: Mind
-  url: mind.org.uk
-  cause: Health
-
 - name: UNICEF New Zealand
   url: unicef.org.nz
   cause: International
@@ -641,10 +637,6 @@
 - name: World Wildlife Fund Canada
   url: wwf.ca
   cause: Environment, Animal Welfare
-
-- name: Fashion Revolution
-  url: fashionrevolution.org
-  cause:
 
 - name: Blue Heart of Europe
   url: blueheart.patagonia.com
