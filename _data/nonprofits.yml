@@ -962,10 +962,6 @@
   url: rescue.org
   cause: International
 
-- name: Kiva
-  url: kiva.org
-  cause:
-
 - name: The Gorilla Organization
   url: gorillas.org
   cause: Animal Welfare, Environment
