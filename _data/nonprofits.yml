@@ -998,10 +998,6 @@
   url: undertheskin.co.uk
   cause: Arts & Culture, Animal Welfare
 
-- name: IUCN Red List of Threatened Species
-  url: iucnredlist.org
-  cause: Environment, Animal Welfare
-
 - name: Wikipedia 15
   url: annual.wikimedia.org/2015
   cause:
