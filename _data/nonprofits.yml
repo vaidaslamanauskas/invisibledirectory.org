@@ -506,10 +506,6 @@
   url: response.transmissiongallery.org
   cause: Arts & Culture
 
-- name: Bronx Documentary Center
-  url: bronxdoc.org
-  cause: Arts & Culture
-
 - name: FEED THE 3OO
   url: 3oo.store
   cause: Animal Welfare
