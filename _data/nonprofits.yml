@@ -786,17 +786,13 @@
   url: unicef.org.uk
   cause: International
 
-- name: UNDP
-  url: undp.org
-  cause: International
+- name: Wikimedia Foundation 2016 Annual Report
+  url: annual.wikimedia.org/2016
+  cause:
 
 - name: WaterAid Global
   url: wateraid.org
   cause: Human Services, Health
-
-- name: Wikimedia Foundation 2016 Annual Report
-  url: annual.wikimedia.org/2016
-  cause:
 
 - name: PUSSYPEDIA
   url: pussypedia.net
