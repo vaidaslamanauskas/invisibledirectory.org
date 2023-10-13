@@ -1,3 +1,7 @@
+- name: Settle
+  url: wearesettle.org
+  cause: Human Services
+
 - name: Designed by Women
   url: designedbywomen.org
   cause: Arts & Culture
