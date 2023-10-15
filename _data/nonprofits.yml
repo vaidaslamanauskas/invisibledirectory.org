@@ -1,3 +1,7 @@
+- name: In My World
+  url: onedayinmyworld.com
+  cause: Health
+
 - name: Settle
   url: wearesettle.org
   cause: Human Services
