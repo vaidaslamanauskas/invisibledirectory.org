@@ -1,3 +1,7 @@
+- name: Girl Scouts
+  url: girlscouts.org
+  cause: Education
+
 - name: BlackSpace
   url: blackspace.org
   cause: Human Services
