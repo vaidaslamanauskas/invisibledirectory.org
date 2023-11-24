@@ -1,7 +1,3 @@
-- name: Define American
-  url: defineamerican.com
-  cause: Human Services
-
 - name: Incite
   url: incite.org
   cause: Human Services
