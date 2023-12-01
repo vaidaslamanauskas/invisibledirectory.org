@@ -370,13 +370,13 @@
   url: rhizome.org
   cause: Arts & Culture
 
-- name: Emergent Works
-  url: emergentworks.org
-  cause: Human Services, Education
-
 - name: froSkate
   url: froskate.com
   cause:
+
+- name: Emergent Works
+  url: emergentworks.org
+  cause: Human Services, Education
 
 - name: IDA Radio
   url: idaidaida.net
