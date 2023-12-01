@@ -642,14 +642,6 @@
   url: dataafrica.io
   cause:
 
-- name: UNICEF New Zealand
-  url: unicef.org.nz
-  cause: International
-
-- name: Coral Gardeners
-  url: coralgardeners.org
-  cause: Environment
-
 - name: Save the Children International
   url: savethechildren.net
   cause: International
