@@ -1,3 +1,7 @@
+- name: UNICEF Aotearoa 
+  url: unicef.org.nz
+  cause: International 
+
 - name: Kalliopeia Foundation 
   url: kalliopeia.org 
   cause: Environment, Education
