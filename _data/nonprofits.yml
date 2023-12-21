@@ -2,6 +2,10 @@
   url: brooklyn.org 
   cause: Human Services
 
+- name: Platform 
+  url: platformlondon.org
+  cause: Environment
+
 - name: LAS Art Foundation 
   url: las-art.foundation 
   cause: Arts & Culture
