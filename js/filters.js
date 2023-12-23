@@ -11,6 +11,13 @@ filtersToggle.addEventListener('click', () => {
     
     filtersToggle.dataset.open = 'true';
     filtersToggle.classList.add('is-active');
+
+    // open sound
+    let audio = new Audio('../sounds/open.wav');
+    console.log(audio);
+    audio.volume = 1;
+    audio.play();
+
   } else {
     filtersBox.setAttribute('aria-hidden', true);
     header.classList.remove('has-tongue');
@@ -19,6 +26,12 @@ filtersToggle.addEventListener('click', () => {
     
     filtersToggle.dataset.open = 'false';
     filtersToggle.classList.remove('is-active');
+
+    // close sound
+    let audio = new Audio('../sounds/close.wav');
+    console.log(audio);
+    audio.volume = 1;
+    audio.play();
   }
 });
 
@@ -39,11 +52,24 @@ for (filter of filters) {
       
       filteringBy.style.display = 'none';
       filteringBy.innerText = '';
+
+      // clear filter sound
+      let audio = new Audio('../sounds/clear.wav');
+      console.log(audio);
+      audio.volume = 1;
+      audio.play();
+
     } else {
       for (filter of filters) {
         filter.classList.remove('is-selected');
       }
       e.target.classList.add('is-selected');
+
+      // select filter sound
+      let audio = new Audio('../sounds/select.wav');
+      console.log(audio);
+      audio.volume = 1;
+      audio.play();
 
       hideAllBlocks();
       

@@ -244,7 +244,7 @@ header.has-tongue > button {
 
 dialog {
   background-color: #FFF;
-  display: none;
+  display: block;
   
   /* Taking header into account .. */
   padding-top: 4.75rem;
@@ -258,17 +258,14 @@ dialog {
   height: auto;
   
   overflow: hidden;
+  transform-origin: center top;
+  transform: translateY(-100%) scale(.99);
+  transition: transform .25s cubic-bezier(.55, .08, 0, 1);
+  /*transition: transform .25s cubic-bezier(0.23, 1, 0.32, 1);*/
 }
 
 header.has-tongue dialog {
-  display: block;
-  animation: skateDown .25s cubic-bezier(.33, 1, .68, 1) 0s 1 normal none running;
-}
-
-@keyframes skateDown {
-  0% {
-    transform: translateY(-100%);
-  }
+  transform: none;
 }
 
 dialog > menu {
@@ -277,6 +274,18 @@ dialog > menu {
   
   padding-left: calc(1.125rem + 1rem);
   padding-right: calc(1.125rem + 1rem);
+
+  opacity: 0;
+  transform-origin: center top;
+  transform: scale(.99);
+  transition: opacity .25s cubic-bezier(.55, .08, 0, 1), transform .25s cubic-bezier(.55, .08, 0, 1);
+  transition-delay: 0;
+}
+
+header.has-tongue dialog > menu {
+  opacity: 1;
+  transform: none;
+  transition-delay: .125s;
 }
 
 dialog > menu a {
