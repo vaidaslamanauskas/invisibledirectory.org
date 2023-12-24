@@ -257,6 +257,8 @@ dialog {
   width: auto;
   height: auto;
   
+  will-change: transform;
+
   overflow: hidden;
   transform-origin: center top;
   transform: translateY(-100%) scale(.99);
@@ -491,6 +493,8 @@ article {
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+
+  will-change: transform;
 
   opacity: 0;
   transform-origin: right;
