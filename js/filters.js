@@ -13,7 +13,7 @@ filtersToggle.addEventListener('click', () => {
     filtersToggle.classList.add('is-active');
 
     // open sound
-    let audio = new Audio('../sounds/open.wav');
+    let audio = new Audio('../sounds/open.m4a');
     console.log(audio);
     audio.volume = 1;
     audio.play();
@@ -28,7 +28,7 @@ filtersToggle.addEventListener('click', () => {
     filtersToggle.classList.remove('is-active');
 
     // close sound
-    let audio = new Audio('../sounds/close.wav');
+    let audio = new Audio('../sounds/close.m4a');
     console.log(audio);
     audio.volume = 1;
     audio.play();
@@ -54,7 +54,7 @@ for (filter of filters) {
       filteringBy.innerText = '';
 
       // clear filter sound
-      let audio = new Audio('../sounds/clear.wav');
+      let audio = new Audio('../sounds/clear.m4a');
       console.log(audio);
       audio.volume = 1;
       audio.play();
@@ -66,9 +66,9 @@ for (filter of filters) {
       e.target.classList.add('is-selected');
 
       // select filter sound
-      let audio = new Audio('../sounds/select.wav');
+      let audio = new Audio('../sounds/select.m4a');
       console.log(audio);
-      audio.volume = 1;
+      audio.volume = 0.15; // meh ..
       audio.play();
 
       hideAllBlocks();
