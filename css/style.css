@@ -396,7 +396,7 @@ dialog > menu span {
 
 .eyes .eye svg {
   width: auto;
-  height: var(--sizes-7);
+  height: calc(var(--sizes-7) + 5px);
 }
 
 .eyes .eye .pupil {
