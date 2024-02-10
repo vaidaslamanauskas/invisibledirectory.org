@@ -2,16 +2,8 @@
   font-family: "ShantellSans";
   font-display: block;
   font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/Shantell_Sans-Normal-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "ShantellSans";
-  font-display: block;
-  font-style: normal;
-  font-weight: 500;
-  src: url("/fonts/Shantell_Sans-Normal-Medium.woff2") format("woff2");
+  font-weight: 600;
+  src: url("/fonts/Shantell_Sans-Normal-SemiBold.woff2") format("woff2");
 }
 
 @font-face {
@@ -23,35 +15,56 @@
 }
 
 :root {
-  /* Document dimentions */
-  --document-margin: clamp(1rem, -0.25rem + 5vw, 3.75rem);
-  
   /* Colors */
-  --gray: rgb(87 87 87);
+  --colors-gray0: #000;
+  --colors-gray1: #1A1A1A;
+  --colors-gray2: #333333;
+  --colors-gray3: #4F4F4F;
+  --colors-gray4: #696969;
+  --colors-gray5: #B2B2B2;
+  --colors-gray6: #E5E5E5;
+  --colors-gray7: #FFF;
+
+  --colors-background: var(--colors-gray0);
+  --colors-foreground: var(--colors-gray7);
+
+  /* Spacing */
+  --space-1: 5px;
+  --space-2: 10px;
+  --space-3: 15px;
+  --space-4: 20px;
+  --space-5: 25px;
+  --space-6: 35px;
+  --space-7: 45px;
+  --space-8: 65px;
+  --space-9: 80px;
+  --space-10: 100px;
+
+  /* Font Sizes */
+  --fontSizes-1: 0.78125rem;
+  --fontSizes-2: 0.9rem;
+  --fontSizes-3: 1rem;
+  --fontSizes-4: 1.2rem;
+  --fontSizes-5: 1.5rem;
+  --fontSizes-6: 1.75rem;
+  --fontSizes-7: 2rem;
+  --fontSizes-8: 2.5rem;
+  --fontSizes-9: 3rem;
   
   /* Typography */
-  --type-font-family: "ShantellSans";
-  --type-font-size: 16px;
-  --type-line-height: 1.5;
-  
-  /* Borders */
-  --border-radius-xs: .5rem; /* 8px */
-  --border-radius-sm: .625rem; /* 10px */
-  --border-radius-md: .75rem;
-  --border-radius-lg: 1rem;
-  --border-radius-full: 10rem;
+  --font: "ShantellSans";
 }
 
 :root {
   box-sizing: border-box;
-  background-color: #000;
+  background-color: var(--colors-background);
+  color: var(--colors-foreground);
   
   /* Simply feels better then global text cursor */
   cursor: default;
   
-  font-family: var(--type-font-family);
-  font-size: var(--type-font-size);
-  line-height: var(--type-line-height);
+  font-family: var(--font);
+  line-height: 1;
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
