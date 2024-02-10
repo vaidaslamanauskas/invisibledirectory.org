@@ -40,6 +40,18 @@
   --space-9: 80px;
   --space-10: 100px;
 
+  /* Sizes */
+  --sizes-1: 5px;
+  --sizes-2: 10px;
+  --sizes-3: 15px;
+  --sizes-4: 20px;
+  --sizes-5: 25px;
+  --sizes-6: 35px;
+  --sizes-7: 45px;
+  --sizes-8: 65px;
+  --sizes-9: 80px;
+  --sizes-10: 100px;
+
   /* Font Sizes */
   --fontSizes-1: 0.78125rem;
   --fontSizes-2: 0.9rem;
@@ -50,9 +62,11 @@
   --fontSizes-7: 2rem;
   --fontSizes-8: 2.5rem;
   --fontSizes-9: 3rem;
-  
+
   /* Typography */
   --font: "ShantellSans";
+
+  --radii-1: 3px;
 }
 
 :root {
@@ -177,7 +191,7 @@ button {
  */
 
 header {
-  background-color: transparent;
+  background-color: plum;
   
   display: flex;
   align-items: center;
@@ -187,11 +201,6 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  
-  padding-top: 1.125rem;
-  padding-bottom: 1.125rem;
-  padding-left: 1.125rem;
-  padding-right: 1.125rem;
   
   z-index: 666;
 }
@@ -235,15 +244,23 @@ header > menu a {
 
 header > button,
 header > menu button {
-  background-color: #FFF;
-  border-radius: var(--border-radius-full);
-  box-shadow: inset 0 0 0 .125rem #000;
+  background-color: var(--colors-gray1);
+  color: var(--colors-link);
+  border: 1px solid transparent;
+  border-radius: var(--radii-1);
   
-  padding: .75rem 1rem;
-  
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1;
+  height: 24px;
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+  font-size: var(--fontSizes-1);
+  font-weight: 600;
+}
+
+header > button:hover,
+header > menu button:hover {
+  background-color: var(--colors-gray1);
+  color: var(--colors-gray7);
+  border: 1px solid var(--colors-gray3);
 }
 
 header.has-tongue > button {
@@ -261,7 +278,6 @@ dialog {
   
   /* Taking header into account .. */
   padding-top: 4.75rem;
-  padding-bottom: 1.125rem;
   
   position: fixed;
   top: 0;
@@ -288,17 +304,17 @@ dialog > menu {
   display: grid;
   justify-items: start;
   
-  padding-left: calc(1.125rem + 1rem);
-  padding-right: calc(1.125rem + 1rem);
+  padding-left: 0;
+  padding-right: 0;
 }
 
 dialog > menu a {
   display: flex;
   align-items: center;
-  gap: .375rem;
+  gap: 0;
   
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: var(--fontSizes-1);
+  font-weight: 600;
 }
 
 dialog > menu a::before {
@@ -316,9 +332,9 @@ dialog > menu a.is-selected::after {
 }
 
 dialog > menu span {
-  color: var(--gray);
-  font-size: .75rem;
-  font-weight: 700;
+  color: var(--colors-gray0);
+  font-size: var(--fontSizes-1);
+  font-weight: 600;
   letter-spacing: .02em;
   text-transform: uppercase;
 }
@@ -338,24 +354,20 @@ dialog > menu span {
 }
 
 .eyes .eye {
-  color: #FFF;
+  color: var(--colors-gray6);
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-header.has-tongue .eyes .eye {
-  color: hsl(0 0% 90%);
-}
-
 .eyes .eye:last-child {
-  margin-left: -.375rem;
+  margin-left: -7.5px;
 }
 
 .eyes .eye svg {
   width: auto;
-  height: 3rem;
+  height: var(--sizes-7);
 }
 
 .eyes .eye .pupil {
@@ -363,7 +375,7 @@ header.has-tongue .eyes .eye {
   
   position: absolute;
   width: auto;
-  height: 1.625rem;
+  height: var(--sizes-5);
   will-change: transform;
   z-index: 6;
 }
@@ -406,18 +418,24 @@ main > a:focus img {
 
 main > a img {
   aspect-ratio: 16/10;
-  background-color: hsl(230, 0%, 7.5%);
-  border-radius: var(--border-radius-xs);
+  border: 1px solid transparent;
+  border-radius: var(--radii-1);
+}
+
+main > a:hover img {
+  border-color: var(--colors-gray3);
 }
 
 main > a p {
-  color: #FFF;
+  color: var(--colors-gray6);
   display: block;
-  margin-top: .5rem;
-  padding-right: 1rem;
+
+  margin-top: var(--space-2);
+  padding-right: var(--space-4);
   
-  font-size: .75rem;
-  font-weight: 700;
+  font-size: var(--fontSizes-1);
+  font-weight: 600;
+  line-height: 1.35;
   
   width: 100%;
   white-space: nowrap;
@@ -565,31 +583,28 @@ article figure figcaption {
 @media (min-width: 768px) {
   
   header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    
-    /* Offset inset shadow .. */
-    padding-left: calc(2rem - .125rem);
-    padding-right: calc(2rem - .125rem);
+    height: 100px;
+
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
   }
   
   dialog {
     /* Taking header into account .. */
-    padding-top: 6.5rem;
-    padding-bottom: 2rem;
+    padding-top: 100px;
   }
   
   dialog > menu {
-    padding-left: calc(2rem + 1rem);
-    padding-right: calc(2rem + 1rem);
+    padding-left: 0;
+    padding-right: 0;
   }
   
   dialog > menu a {
-    font-size: 1.25rem;
+    font-size: var(--fontSizes-1);
   }
   
   dialog > menu span {
-    font-size: .875rem;
+    font-size: var(--fontSizes-1);
   }
   
   .eyes {
@@ -597,16 +612,15 @@ article figure figcaption {
   }
   
   main {
-    column-gap: 1.875rem;
-    row-gap: 1.875rem;
+    column-gap: var(--sizes-3);
+    row-gap: var(--space-3);
     
     /* Header height */
-    margin-top: 6.5rem;
-    
-    padding-top: 0;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-top: 100px;
+
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+    padding-bottom: var(--space-6);
   }
   
   main > a {
