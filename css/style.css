@@ -83,6 +83,8 @@
   --font: "ShantellSans";
 
   --radii-1: 3px;
+  --radii-2: 5px;
+  --radii-3: 10px;
   --radii-pill: 666px;
 
   --blurs-1: blur(3px);
@@ -466,7 +468,7 @@ main > a:focus img {
 main > a img {
   aspect-ratio: 16/10;
   border: 1px solid transparent;
-  border-radius: var(--radii-1);
+  border-radius: var(--radii-3);
 }
 
 main > a:hover img {
@@ -628,7 +630,7 @@ article figure {
 }
 
 article figure img {
-  border-radius: var(--radii-1);
+  border-radius: var(--radii-2);
 }
 
 article figure figcaption {
@@ -677,7 +679,7 @@ article figure figcaption {
     column-gap: var(--sizes-4);
     row-gap: var(--space-4);
     
-    margin-top: var(--headerHeight);
+    margin-top: calc(var(--headerHeight) * 2);
 
     padding-left: var(--space-8);
     padding-right: var(--space-8);
