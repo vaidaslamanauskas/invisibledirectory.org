@@ -25,6 +25,14 @@
   --colors-gray6: #E5E5E5;
   --colors-gray7: #FFF;
 
+  --colors-red1: #1A0404;
+  --colors-red2: #412020;
+  --colors-red3: #EB6864;
+
+  --colors-blue1: #191D52;
+  --colors-blue2: #5E6DEE;
+  --colors-blue3: #C1C4EA;
+
   --colors-background: var(--colors-gray0);
   --colors-foreground: var(--colors-gray7);
 
@@ -67,6 +75,9 @@
   --font: "ShantellSans";
 
   --radii-1: 3px;
+  --radii-pill: 666px;
+
+  --headerHeight: var(--sizes-10);
 }
 
 :root {
@@ -191,7 +202,7 @@ button {
  */
 
 header {
-  background-color: plum;
+  background-color: transparent;
   
   display: flex;
   align-items: center;
@@ -223,7 +234,7 @@ header > button::after {
 }
 
 header.has-tongue > button::after {
-  content: "▴"; /* use × */
+  content: "▴";
 }
 
 header > button span {
@@ -247,12 +258,14 @@ header > menu button {
   background-color: var(--colors-gray1);
   color: var(--colors-link);
   border: 1px solid transparent;
-  border-radius: var(--radii-1);
+  border-radius: var(--radii-pill);
   
-  height: 24px;
-  padding-left: var(--space-2);
-  padding-right: var(--space-2);
-  font-size: var(--fontSizes-1);
+  height: var(--sizes-6);
+
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+
+  font-size: var(--fontSizes-2);
   font-weight: 600;
 }
 
@@ -263,9 +276,17 @@ header > menu button:hover {
   border: 1px solid var(--colors-gray3);
 }
 
+/* TODO
+header > button:focus,
+header > menu button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px var(--colors-blue2);
+}
+*/
+
 header.has-tongue > button {
-  background-color: #000;
-  color: #FFF;
+  background-color: var(--colors-gray1);
+  color: var(--colors-gray6);
 }
 
 /**
@@ -273,11 +294,14 @@ header.has-tongue > button {
  */
 
 dialog {
-  background-color: #FFF;
+  background-color: var(--colors-background);
+  border-bottom: 1px solid var(--colors-gray2);
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1);
+
   display: none;
   
   /* Taking header into account .. */
-  padding-top: 4.75rem;
+  padding-top: var(--headerHeight);
   
   position: fixed;
   top: 0;
@@ -291,16 +315,23 @@ dialog {
 
 header.has-tongue dialog {
   display: block;
-  animation: skateDown .25s cubic-bezier(.33, 1, .68, 1) 0s 1 normal none running;
+  animation: 150ms cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal none running bumpDialog;
 }
 
-@keyframes skateDown {
+@keyframes bumpDialog {
   0% {
-    transform: translateY(-100%);
+    opacity: 0;
+    transform: translateY(calc(var(--space-2)*-1)) scale(.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
 dialog > menu {
+  background-color: brown;
+
   display: grid;
   justify-items: start;
   
@@ -309,11 +340,12 @@ dialog > menu {
 }
 
 dialog > menu a {
+  color: var(--colors-gray6);
   display: flex;
   align-items: center;
   gap: 0;
   
-  font-size: var(--fontSizes-1);
+  font-size: var(--fontSizes-2);
   font-weight: 600;
 }
 
@@ -323,20 +355,17 @@ dialog > menu a::before {
 
 dialog > menu a.is-selected::before {
   content: "●";
-  color: #000;
 }
 
 dialog > menu a.is-selected::after {
   content: "Clear";
-  color: #B66E5F;
+  color: var(--colors-red3);
 }
 
 dialog > menu span {
-  color: var(--colors-gray0);
-  font-size: var(--fontSizes-1);
+  color: var(--colors-gray5);
+  font-size: var(--fontSizes-2);
   font-weight: 600;
-  letter-spacing: .02em;
-  text-transform: uppercase;
 }
 
 /**
@@ -362,7 +391,7 @@ dialog > menu span {
 }
 
 .eyes .eye:last-child {
-  margin-left: -7.5px;
+  margin-left: -6.5px;
 }
 
 .eyes .eye svg {
@@ -371,11 +400,11 @@ dialog > menu span {
 }
 
 .eyes .eye .pupil {
-  color: #000;
+  color: var(--colors-gray1);
   
   position: absolute;
   width: auto;
-  height: var(--sizes-5);
+  height: calc(var(--sizes-5) + 5px);
   will-change: transform;
   z-index: 6;
 }
@@ -388,16 +417,14 @@ main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   
-  column-gap: 1rem;
-  row-gap: 1rem;
+  column-gap: var(--sizes-2);
+  row-gap: var(--sizes-2);
   
-  /* Header height */
-  margin-top: 4.75rem;
+  margin-top: var(--headerHeight);
   
-  padding-top: 0;
-  padding-bottom: 1.125rem;
-  padding-left: 1.125rem;
-  padding-right: 1.125rem;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 main > a {
@@ -413,7 +440,7 @@ main > a:focus {
 
 main > a:focus img {
   /* TODO: add color specific focuses .. */
-  box-shadow: 0 0 0 .25rem rgb(255 255 255 / 30%);
+  box-shadow: 0 0 0 var(--sizes-1) var(--colors-blue2);
 }
 
 main > a img {
@@ -583,28 +610,20 @@ article figure figcaption {
 @media (min-width: 768px) {
   
   header {
-    height: 100px;
+    height: var(--headerHeight);
 
-    padding-left: var(--space-4);
-    padding-right: var(--space-4);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
   }
   
   dialog {
     /* Taking header into account .. */
-    padding-top: 100px;
+    padding-top: var(--headerHeight);
   }
   
   dialog > menu {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  
-  dialog > menu a {
-    font-size: var(--fontSizes-1);
-  }
-  
-  dialog > menu span {
-    font-size: var(--fontSizes-1);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
   }
   
   .eyes {
@@ -612,11 +631,10 @@ article figure figcaption {
   }
   
   main {
-    column-gap: var(--sizes-3);
-    row-gap: var(--space-3);
+    column-gap: var(--sizes-4);
+    row-gap: var(--space-4);
     
-    /* Header height */
-    margin-top: 100px;
+    margin-top: var(--headerHeight);
 
     padding-left: var(--space-8);
     padding-right: var(--space-8);
