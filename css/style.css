@@ -2,6 +2,14 @@
   font-family: "ShantellSans";
   font-display: block;
   font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Shantell_Sans-Normal-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ShantellSans";
+  font-display: block;
+  font-style: normal;
   font-weight: 600;
   src: url("/fonts/Shantell_Sans-Normal-SemiBold.woff2") format("woff2");
 }
@@ -487,15 +495,18 @@ main > a p {
  */
  
 aside {
-  background-color: #FFF;
+  background-color: var(--colors-background);
+  border-left: 1px solid var(--colors-gray2);
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1);
+
   display: none;
   flex-direction: column;
   align-items: flex-end;
   
-  padding-top: 1.125rem;
-  padding-bottom: 1.125rem;
-  padding-left: 1.125rem;
-  padding-right: 1.125rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   
   overflow: auto;
   overflow-x: hidden;
@@ -514,20 +525,24 @@ aside {
 
 aside.is-open {
   display: flex;
-  animation: skateLeft .25s cubic-bezier(.33, 1, .68, 1) 0s 1 normal none running;
+  animation: 150ms cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal none running popAside;
 }
 
-@keyframes skateLeft {
+@keyframes popAside {
   0% {
-    transform: translateX(100%);
+    opacity: 0;
+    transform: translateX(var(--space-2)) scale(.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
   }
 }
 
 aside > button {
-  background-color: #FFF;
-  border: 0;
-  border-radius: var(--border-radius-full);
-  box-shadow: inset 0 0 0 0.125rem #000;
+  background-color: var(--colors-gray1);
+  border: 1px solid transparent;
+  border-radius: var(--radii-pill);
   
   display: flex;
   align-items: center;
@@ -538,13 +553,18 @@ aside > button {
   top: 0;
   left: 0;
   
-  width: 2.5rem;
-  height: 2.5rem;
+  width: var(--sizes-6);
+  height: var(--sizes-6);
 }
 
 aside > button svg {
   width: auto;
-  height: .875rem;
+  height: var(--sizes-2);
+}
+
+aside > button:hover {
+  background-color: var(--colors-gray1);
+  border: 1px solid var(--colors-gray3);
 }
 
 /**
@@ -559,38 +579,48 @@ article {
 }
 
 article > section + section {
-  margin-top: 1.5rem;
+  margin-top: var(--space-6);
 }
 
 article > section h2 + p {
-  margin-top: .875rem;
+  margin-top: var(--space-3);
 }
 
 article > section p + p {
-  margin-top: .875rem;
+  margin-top: var(--space-3);
 }
 
 article > section h2 {
-  font-size: 1rem;
-  font-weight: bold;
+  color: var(--colors-gray6);
+  font-size: var(--fontSizes-2);
+  font-weight: 600;
 }
 
 article > section p {
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: .01em;
+  color: var(--colors-gray6);
+  font-size: var(--fontSizes-2);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+
   max-width: 100%;
   width: 100%;
 }
 
 article > section small {
-  color: var(--gray);
-  font-size: .75rem;
-  font-weight: 500;
+  font-size: var(--fontSizes-2);
 }
 
 article > section a {
   text-decoration: underline;
+}
+
+article > section a:hover {
+  color: var(--colors-blue2);
 }
 
 article figure {
@@ -598,14 +628,15 @@ article figure {
 }
 
 article figure img {
-  border-radius: var(--border-radius-xs);
+  border-radius: var(--radii-1);
 }
 
 article figure figcaption {
-  color: var(--gray);
-  margin-top: .875rem;
-  font-size: .75rem;
+  color: var(--colors-gray5);
+  margin-top: var(--space-2);
+  font-size: var(--fontSizes-1);
   font-weight: 500;
+  line-height: 1.35;
 }
 
 @media (min-width: 540px) {
@@ -658,11 +689,11 @@ article figure figcaption {
   }
   
   aside {
-    max-width: 34rem;
+    max-width: 450px;
     
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-6);
   }
 }
