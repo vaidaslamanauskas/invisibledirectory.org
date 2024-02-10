@@ -77,6 +77,8 @@
   --radii-1: 3px;
   --radii-pill: 666px;
 
+  --blurs-1: blur(3px);
+
   --headerHeight: var(--sizes-10);
 }
 
@@ -107,9 +109,10 @@ html.has-drapes body {
 }
 
 html body::after {
-  background-color: rgb(0 0 0 / 40%);
+  background-color: rgba(26, 26, 26, 0.6);
+  backdrop-filter: var(--blurs-1);
   content: "";
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -118,13 +121,22 @@ html body::after {
   height: 100%;
   
   pointer-events: none;
-  opacity: 0;
   z-index: 666;
 }
 
 html.has-drapes body::after {
+  display: block;
   pointer-events: all;
-  opacity: 1;
+  animation: 150ms cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal none running popDrapes;
+}
+
+@keyframes popDrapes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 body {
@@ -302,6 +314,7 @@ dialog {
   
   /* Taking header into account .. */
   padding-top: var(--headerHeight);
+  padding-bottom: var(--space-5);
   
   position: fixed;
   top: 0;
@@ -315,10 +328,10 @@ dialog {
 
 header.has-tongue dialog {
   display: block;
-  animation: 150ms cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal none running bumpDialog;
+  animation: 150ms cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal none running popDialog;
 }
 
-@keyframes bumpDialog {
+@keyframes popDialog {
   0% {
     opacity: 0;
     transform: translateY(calc(var(--space-2)*-1)) scale(.96);
@@ -330,10 +343,9 @@ header.has-tongue dialog {
 }
 
 dialog > menu {
-  background-color: brown;
-
   display: grid;
   justify-items: start;
+  gap: var(--space-1);
   
   padding-left: 0;
   padding-right: 0;
@@ -343,7 +355,7 @@ dialog > menu a {
   color: var(--colors-gray6);
   display: flex;
   align-items: center;
-  gap: 0;
+  gap: var(--space-1);
   
   font-size: var(--fontSizes-2);
   font-weight: 600;
@@ -622,8 +634,8 @@ article figure figcaption {
   }
   
   dialog > menu {
-    padding-left: var(--space-5);
-    padding-right: var(--space-5);
+    padding-left: calc(var(--space-5) + var(--space-3));
+    padding-right: calc(var(--space-5) + var(--space-3));
   }
   
   .eyes {
