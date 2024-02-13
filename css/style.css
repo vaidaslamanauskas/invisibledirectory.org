@@ -230,6 +230,11 @@ header {
   align-items: center;
   justify-content: space-between;
   
+  height: var(--headerHeight);
+
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+
   position: fixed;
   top: 0;
   left: 0;
@@ -357,8 +362,8 @@ dialog > menu {
   justify-items: start;
   gap: var(--space-1);
   
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: calc(var(--space-3) + var(--space-3));
+  padding-right: calc(var(--space-3) + var(--space-3));
 }
 
 dialog > menu a {
@@ -440,13 +445,13 @@ main {
   grid-template-columns: repeat(12, 1fr);
   
   column-gap: var(--sizes-2);
-  row-gap: var(--sizes-2);
+  row-gap: var(--sizes-4);
   
   margin-top: var(--headerHeight);
   
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-bottom: var(--space-3);
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
 }
 
 main > a {
@@ -507,10 +512,10 @@ aside {
   flex-direction: column;
   align-items: flex-end;
   
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-left: var(--space-5);
+  padding-right: var(--space-5);
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
   
   overflow: auto;
   overflow-x: hidden;
