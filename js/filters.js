@@ -1,29 +1,21 @@
-const header = document.querySelector('header');
-const filtersToggle = document.querySelector('header > button');
+const filtersOpen = document.querySelector('header > button');
+const filtersClose = document.querySelector('dialog > button');
 const filtersBox = document.querySelector('dialog');
 
-filtersToggle.addEventListener('click', () => {
-  if (filtersToggle.dataset.open == 'false') {
-    filtersBox.setAttribute('aria-hidden', false);
-    header.classList.add('has-tongue');
-    
-    document.documentElement.classList.add('has-drapes');
-    
-    filtersToggle.dataset.open = 'true';
-    filtersToggle.classList.add('is-active');
-  } else {
-    filtersBox.setAttribute('aria-hidden', true);
-    header.classList.remove('has-tongue');
-    
-    document.documentElement.classList.remove('has-drapes');
-    
-    filtersToggle.dataset.open = 'false';
-    filtersToggle.classList.remove('is-active');
-  }
+filtersOpen.addEventListener('click', () => {
+  filtersBox.showModal();
+  filtersBox.setAttribute('aria-hidden', false);
 });
 
+/* bring back into a close button ..
+filtersClose.addEventListener('click', () => {
+  filtersBox.close();
+  filtersBox.setAttribute('aria-hidden', true);
+});
+*/
+
 // Topic filtering
-const filters = document.querySelectorAll('dialog > menu a');
+const filters = document.querySelectorAll('dialog > menu button');
 const filteringBy = document.querySelector('header > button span');
 
 console.log(filters);
@@ -31,6 +23,8 @@ console.log(filters);
 for (filter of filters) {
   filter.addEventListener('click', e => {
     showAllBlocks();
+
+    filtersBox.close();
 
     if (e.target.classList.contains('is-selected')) {
       console.log('selected');
@@ -47,7 +41,6 @@ for (filter of filters) {
 
       hideAllBlocks();
       
-      // filterBlocks(e.target.dataset.type + 's', e.target.dataset.filter);
       filterBlocks(e.target.dataset.type, e.target.dataset.filter);
 
       filteringBy.style.display = 'block';
@@ -57,13 +50,6 @@ for (filter of filters) {
     }
 
     filtersBox.setAttribute('aria-hidden', true);
-    header.classList.remove('has-tongue');
-    
-    document.documentElement.classList.remove('has-drapes');
-    
-    filtersToggle.classList.remove('is-active');
-    filtersToggle.dataset.open = 'false';
-
   });
 }
 

@@ -1,5 +1,5 @@
 <header>
-  <button data-open="false">
+  <button>
     Filter
     <span></span>
   </button>
@@ -30,18 +30,16 @@
   <menu>
     <button>Info</button>
   </menu>
-  
-  <dialog aria-hidden="true">
-    <menu>
-      <span>Cause</span>
-      
-      <a data-filter="arts-and-culture" data-type="cause">Arts & Culture</a>
-      <a data-filter="animal-welfare" data-type="cause">Animal Welfare</a>      
-      <a data-filter="education" data-type="cause">Education</a>
-      <a data-filter="environment" data-type="cause">Environment</a>
-      <a data-filter="health" data-type="cause">Health</a>
-      <a data-filter="human-services" data-type="cause">Human Services</a>
-      <a data-filter="international" data-type="cause">International</a>
-    </menu>
-  </dialog>
 </header>
+
+<dialog aria-hidden="true">
+  <menu>  
+    <button data-filter="arts-and-culture" data-type="cause">Arts & Culture</button>
+    <button data-filter="animal-welfare" data-type="cause">Animal Welfare</button>
+    <button data-filter="education" data-type="cause">Education</button>
+    <button data-filter="environment" data-type="cause">Environment</button>
+    <button data-filter="health" data-type="cause">Health</button>
+    <button data-filter="human-services" data-type="cause">Human Services</button>
+    <button data-filter="international" data-type="cause">International</button>
+  </menu>
+</dialog>
