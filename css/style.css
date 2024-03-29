@@ -87,7 +87,7 @@
   --radii-3: 10px;
   --radii-pill: 666px;
 
-  --blurs-1: blur(3px);
+  --blurs-1: blur(5px);
 
   --headerHeight: var(--sizes-10);
 }
