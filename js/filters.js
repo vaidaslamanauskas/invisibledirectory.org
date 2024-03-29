@@ -7,6 +7,19 @@ filtersOpen.addEventListener('click', () => {
   filtersBox.setAttribute('aria-hidden', false);
 });
 
+// handle click outside dialog to close ..
+filtersBox.addEventListener('click', () => {
+  let rect = filtersBox.getBoundingClientRect();
+
+  let isInsideDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height &&
+    rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
+
+  if (!isInsideDialog) {
+    filtersBox.close();
+    filtersBox.setAttribute('aria-hidden', true);
+  }
+});
+
 /* bring back into a close button ..
 filtersClose.addEventListener('click', () => {
   filtersBox.close();
