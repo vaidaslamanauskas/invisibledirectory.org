@@ -493,11 +493,15 @@ article > section p {
 }
 
 article > section a {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--colors-gray4);
+}
+
+article > section a::after {
+  content: " ↗";
 }
 
 article > section a:hover {
-  color: var(--colors-blue2);
+  border-color: var(--colors-gray6);
 }
 
 /**
