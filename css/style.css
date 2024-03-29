@@ -114,6 +114,10 @@
   box-sizing: inherit;
 }
 
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
