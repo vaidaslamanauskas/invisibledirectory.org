@@ -50,6 +50,9 @@ for (filter of filters) {
     }
 
     filtersBox.setAttribute('aria-hidden', true);
+
+    // restore scroll position when filter is selected or cleared
+    window.scrollTo(0,0);
   });
 }
 
