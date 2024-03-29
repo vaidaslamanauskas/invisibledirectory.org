@@ -296,6 +296,7 @@ dialog {
 }
 
 dialog:not([open]) {
+  display: none; /* TODO: revisit .. */
   pointer-events: none;
   opacity: 0;
 }
