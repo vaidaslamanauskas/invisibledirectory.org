@@ -1,10 +1,10 @@
+- name: SourceMaterial 
+  url: source-material.org 
+  cause: International
+
 - name: Plan International 
   url: plan-international.org
   cause: International, Human Services
-
-- name: A People’s EPA 
-  url: apeoplesepa.org 
-  cause: Environment, International 
 
 - name: Unga Klara 
   url: ungaklara.se 
