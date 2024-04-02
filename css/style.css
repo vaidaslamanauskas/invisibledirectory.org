@@ -264,13 +264,15 @@ header > menu a:hover {
   border: 1px solid var(--colors-gray3);
 }
 
-/* TODO
-header > button:focus,
-header > menu button:focus {
-  outline: 0;
-  box-shadow: 0 0 0 3px var(--colors-blue2);
+@media (prefers-reduced-motion: no-preference) {
+
+  header > button:focus,
+  header > menu a:focus {
+    outline-offset: 3px;
+    outline: 3px solid var(--colors-blue2);
+    transition: outline-offset 200ms ease;
+  }
 }
-*/
 
 /**
  * Dialog
@@ -347,6 +349,21 @@ dialog > menu button.is-selected:hover {
   border-color: var(--colors-red3);
 }
 
+@media (prefers-reduced-motion: no-preference) {
+
+  dialog > menu button:focus {
+    outline-offset: 3px;
+    outline: 3px solid var(--colors-blue2);
+    transition: outline-offset 200ms ease;
+  }
+  
+  dialog > menu button.is-selected:focus {
+    outline-offset: 3px;
+    outline: 3px solid var(--colors-red3);
+    transition: outline-offset 200ms ease;
+  }
+}
+
 /**
  * Eyes
  */
@@ -417,9 +434,13 @@ main > a:focus {
   outline: none;
 }
 
-main > a:focus img {
-  /* TODO: add color specific focuses .. */
-  box-shadow: 0 0 0 var(--sizes-1) var(--colors-blue2);
+@media (prefers-reduced-motion: no-preference) {
+
+  main > a:focus img {
+    outline-offset: 3px;
+    outline: 5px solid var(--colors-blue2);
+    transition: outline-offset 200ms ease;
+  }
 }
 
 main > a img {
@@ -552,6 +573,15 @@ footer > a {
 footer > a:hover {
   color: var(--colors-gray7);
   border: 1px solid var(--colors-gray3);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+  footer > a:focus {
+    outline-offset: 3px;
+    outline: 3px solid var(--colors-blue2);
+    transition: outline-offset 200ms ease;
+  }
 }
 
 @media (min-width: 540px) {
