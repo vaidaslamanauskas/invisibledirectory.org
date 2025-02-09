@@ -385,7 +385,7 @@ dialog > menu button.is-selected:hover {
 }
 
 .eyes .eye:last-child {
-  margin-left: -6.5px;
+  margin-left: -5px;
 }
 
 .eyes .eye svg {
@@ -398,7 +398,7 @@ dialog > menu button.is-selected:hover {
   
   position: absolute;
   width: auto;
-  height: calc(var(--sizes-5) + 5px);
+  height: var(--sizes-5);
   will-change: transform;
   z-index: 6;
 }
