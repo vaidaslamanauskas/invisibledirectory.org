@@ -1,3 +1,7 @@
+- name: Shout Your Abortion
+  url: shoutyourabortion.com
+  cause: Health
+
 - name: Atascosa Borderlands 
   url: atascosaborderlands.com 
   cause: Human Services, Environment
@@ -557,10 +561,6 @@
 - name: Traffickwatch
   url: traffickwatch.org
   cause: International
-
-- name: Shout Your Abortion
-  url: shoutyourabortion.com
-  cause: Health
 
 - name: Eames Institute
   url: eamesinstitute.org
